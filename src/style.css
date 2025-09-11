@@ -1,0 +1,102 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: block;
+}
+
+.coding {
+  border: 1px solid #000;
+}
+
+.fix-header {
+  width: 1220px;
+  height: 40px;
+  background-color: #ECECEC;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 270px;
+  font-size: 100px;
+  color: #43ADC7;
+}
+
+.search-bar input, .search-bar button {
+  box-sizing: border-box;
+  height: 32px;
+  border: 2px solid #454545;
+  line-height: 1; /* 確保字體不會撐高 */
+  vertical-align: middle;
+}
+
+.search-bar input {
+  width: 350px;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  padding-left: 15px;
+  font-size: 15px;
+}
+
+.search-bar button {
+  width: 90px;
+  border: 2px solid #454545;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  background: #454545;
+  color: #ffffff;
+  font: bold 15px/36px var(--primary-font-family);
+}
+
+.left-menu, .right-menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-menu > li:first-child {
+  padding: 0px 10px 0px 25px;
+  background: url(../images/icon_home01.png) no-repeat 1px 11px/16px auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 13px;
+  line-height: 40px;
+}
+
+.header {
+  width: 1220px;
+  height: 160px;
+}
+
+.banner {
+  height: 370px;
+}
+
+.content-1 {
+  width: 1220px;
+  height: 130px;
+  padding: 10px 0 0 0;
+}
+
+.menu-bar {
+  position: relative;
+  padding: 0px 10px 0px 10px;
+}/*# sourceMappingURL=style.css.map */
