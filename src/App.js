@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <div>
+        <div className='gray-background'>
           <div className='fix-header'>
             <ul className='left-menu'>
               <li><a href='/'>回首頁</a></li>
@@ -29,7 +29,20 @@ function App() {
             <button>搜尋</button>
           </div>
           <div className='sales-promotion'>
-
+            <li>
+              <a href='/'>
+                <img src="../images/sales-promotion_1.png"></img>
+              </a>
+            </li><li>
+              <a href='/'>
+                <img src="../images/sales-promotion_2.png"></img>
+              </a>
+            </li>
+            <li>
+              <a href='/'>
+                <img src="../images/sales-promotion_3.png"></img>
+              </a>
+            </li>
           </div>
         </div>
       </header>

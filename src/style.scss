@@ -3,13 +3,26 @@
     padding: 0;
 }
 
+
 $mainWidth: 1220px;
 
 div{
-    width: 100%;
     box-sizing: border-box;
     margin: 0 auto;
     display: block;
+}
+
+.gray-background {
+    background-color: #ececec;
+    width: 100%;
+    display: block;
+}
+
+.sales-promotion {
+    width: 340px;
+    height: 70px;
+    display: flex;
+    box-sizing: border-box;
 }
 
 .coding {
@@ -30,6 +43,7 @@ div{
     align-items: center;
     justify-content: space-between;
 }
+
 .logo {
     width: 270px;
     font-size: 100px;
@@ -74,6 +88,10 @@ div{
     background: url(../images/icon_home01.png) no-repeat 1px 11px / 16px auto;
 }
 
+.sales-promotion > li {
+    list-style: none;
+}
+
 a{
     text-decoration: none;
     color: #000000;
@@ -99,4 +117,7 @@ a{
 .menu-bar {
     position: relative;
     padding: 0px 10px 0px 10px;
+}
+
+@media screen and (min-width: 1220px) {
 }

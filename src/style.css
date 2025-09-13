@@ -5,10 +5,22 @@
 }
 
 div {
-  width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
   display: block;
+}
+
+.gray-background {
+  background-color: #ececec;
+  width: 100%;
+  display: block;
+}
+
+.sales-promotion {
+  width: 340px;
+  height: 70px;
+  display: flex;
+  box-sizing: border-box;
 }
 
 .coding {
@@ -72,6 +84,10 @@ div {
 .left-menu > li:first-child {
   padding: 0px 10px 0px 25px;
   background: url(../images/icon_home01.png) no-repeat 1px 11px/16px auto;
+}
+
+.sales-promotion > li {
+  list-style: none;
 }
 
 a {
