@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+li {
+  list-style: none;
+}
+
 div {
   box-sizing: border-box;
   margin: 0 auto;
@@ -37,9 +41,36 @@ div {
 }
 
 .header {
-  display: flex;
+  display: block;
   align-items: center;
+}
+
+.search-area {
+  height: 120px;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.menu-area {
+  height: 40px;
+  margin-top: 4px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.menu-title {
+  margin: 0;
+  position: absolute;
+  top: -36px;
+  left: 0px;
+  z-index: 1;
+}
+
+.menu-title > img {
+  width: 200px;
+  box-shadow: 0px 10px 9px -1px rgba(0, 0, 0, 0.5);
 }
 
 .logo {
@@ -74,6 +105,34 @@ div {
   font: bold 15px/36px var(--primary-font-family);
 }
 
+.sales-promotion > li > a > img {
+  display: block;
+  width: auto;
+  height: 70px;
+}
+
+.tab-area {
+  float: right;
+  display: block;
+}
+
+.menu-tab {
+  display: flex;
+  align-items: flex-end;
+  height: 40PX;
+}
+
+.menu-tab > li {
+  display: block;
+  width: fit-content;
+  background-color: #EAEAEA;
+  font-size: 14px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-left: 2px;
+  padding: 8px 15px;
+}
+
 .left-menu, .right-menu {
   list-style: none;
   display: flex;
@@ -83,7 +142,6 @@ div {
 
 .left-menu > li:first-child {
   padding: 0px 10px 0px 25px;
-  background: url(../images/icon_home01.png) no-repeat 1px 11px/16px auto;
 }
 
 .sales-promotion > li {
@@ -104,6 +162,40 @@ a {
 
 .banner {
   height: 370px;
+  width: 1220px;
+  display: flex;
+}
+
+.banner-left {
+  width: 200px;
+  height: 500PX;
+  position: relative;
+  display: block;
+  background: #515151;
+}
+
+.banner-middle > img {
+  width: 818px;
+  display: block;
+}
+
+.banner-right {
+  width: 202px;
+  display: block;
+  margin: 10px 2px 10px 0px;
+  background: #ffffff;
+}
+
+.banner-right-title {
+  background-image: url("today-promo.jpg");
+  background-repeat: no-repeat; /* 不重複平鋪 */
+  background-size: cover; /* 等比例放大，鋪滿容器 */
+  background-position: center center; /* 圖片置中 */
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 200px;
+  height: 35px;
+  color: #ffffff;
 }
 
 .content-1 {
