@@ -59,34 +59,57 @@ function App() {
               <li>綠色生活</li>
               <li>賺代幣</li>
             </div>  
-          
           </div> 
         </div>
       </header>
-      <div className='banner coding'>
+      <div className='banner'>
         <div className='banner-left'>
           <div className='menu-title'>
             <img src="/images/menu-title.png" alt="/"></img>
+          </div> 
+          <div className='menu-list'>
+            <li>家電・電玩・視聽・廚三機</li>
+            <li>手機・平板・耳機・攝相機</li>
+            <li>電腦・電競・週邊・零組件</li>
+            <li className='group-divider'></li>
+            <li>保健・醫療用品・保險套</li>
+            <li>食品・零食・飲料・生鮮</li>
+            <li className='group-divider'></li>
+            <li>彩妝・保養・洗沐・香氛</li>
+            <li>女時尚・男時尚・運動</li>
+            <li>珠寶・精品・配飾</li>
+            <li className='group-divider'></li>
+            <li>日用品・清潔・餐廚・寵物</li>
+            <li>母嬰・童裝・尿布・玩具</li>
+            <li className='group-divider'></li>
+            <li>家具・寢具・傢飾・修繕</li>
+            <li>運動・按摩・戶外・車類</li>
+            <li className='group-divider'></li>
+            <li>圖書・文具・影音・樂器</li>
+            <li>旅遊・票券・加值・軟體</li>
           </div> 
         </div>
         <div className='banner-middle'>
           <img src="/images/banner_0.jpg" alt="/"></img>
         </div> 
-        <div className='banner-right coding'>
+        <div className='banner-right'>
           <div className='banner-right-title'>
           </div>
           <div className='banner-right-promo'>
-          
+            <img src="/images/banner-promo_1.png" alt="/"></img>
           </div>
           <div className='banner-right-promo'>
-          
+            <img src="/images/banner-promo_2.png" alt="/"></img>
           </div>
           <div className='banner-right-promo'>
-          
+            <img src="/images/banner-promo_3.png" alt="/"></img>
+          </div>
+          <div className='banner-right-bottom'>
           </div>
         </div>
       </div>
       <div className='content-1 coding'>
+        
       </div>
       <div className='content-2 coding'>
       </div>

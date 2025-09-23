@@ -13,12 +13,14 @@ div{
     box-sizing: border-box;
     margin: 0 auto;
     display: block;
+    padding: 0px;
 }
 
 .gray-background {
     background-color: #ececec;
     width: 100%;
     display: block;
+    box-sizing: border-box;
 }
 
 .sales-promotion {
@@ -72,6 +74,39 @@ div{
 .menu-title > img {
     width: 200px;
     box-shadow: 0px 10px 9px -1px rgba(0, 0, 0, 0.5);
+}
+
+.menu-list {
+    padding-top: 17px;
+    width: 200px;
+}
+
+.menu-list > li {
+    font-size: 14px;
+    line-height: 28px;
+    color: #ffffff;
+    text-align: left;
+    cursor: pointer;
+    padding: 0px 12px;
+    box-sizing: border-box;
+    height: 28px;
+}
+
+.menu-list > .group-divider {
+    height: 0;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.menu-list > .group-divider::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 1px;
+    bottom: -8px; 
+    background-color: rgba(255, 255, 255, 0.1);
+    left: 12px;
+    right: 12px;
 }
 
 .logo {
@@ -184,7 +219,6 @@ a{
     width: 202px;
     display: block;
     margin: 10px 2px 10px 0px;
-    background: #ffffff;
 }
 
 .banner-right-title {
@@ -196,7 +230,19 @@ a{
     border-top-left-radius: 10px;
     width: 200px;
     height: 35px;
-    color: #ffffff;
+}
+
+.banner-right-promo > img {
+    width: 200px;
+    height: 100px;
+    display: block;
+}
+
+.banner-right-bottom {
+    background-color: #FFFFFF;
+    padding-bottom: 12px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .content-1{
