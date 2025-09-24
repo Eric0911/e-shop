@@ -108,8 +108,27 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='content-1 coding'>
-        
+      <div className='content-1'>
+        <div>
+          <img src="/images/content-note.png" alt="/"></img>
+        </div>
+        <div>
+          <div className='new-customer'>
+      
+          </div>
+          <div>
+          
+          </div>
+        </div>
+        <div>
+          <div className='TV-shop'>
+            
+          </div>
+          <div>
+          
+          </div>
+          
+        </div>
       </div>
       <div className='content-2 coding'>
       </div>

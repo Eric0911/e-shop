@@ -248,6 +248,42 @@ a {
   width: 1220px;
   height: 130px;
   padding: 10px 0 0 0;
+  display: flex;
+}
+
+.content-1 > div > img:first-child {
+  margin-left: 210px;
+  width: 450px;
+  height: 120px;
+  display: block;
+}
+
+.content-1 > div:not(:first-child) {
+  width: 270px;
+  height: 120px;
+  margin-left: 10px;
+}
+
+.content-1 > div > div:first-child {
+  width: 270px;
+  height: 30px;
+  display: block;
+  background-size: contain;
+}
+
+.content-1 > div > div:not(:first-child) {
+  width: 270px;
+  height: 90px;
+  padding: 10px;
+  background-color: #F5F5F5;
+}
+
+.new-customer {
+  background-image: url(new-customer.png);
+}
+
+.TV-shop {
+  background-image: url(TV-shop.png);
 }
 
 .menu-bar {
