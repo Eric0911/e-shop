@@ -286,7 +286,42 @@ a {
   background-image: url(TV-shop.png);
 }
 
+.content-1 > div > div {
+  display: flex;
+}
+
+.content-1 > div > div > .new-customer-video {
+  width: 125px;
+  height: 70px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 0px 10px 0px 0px;
+}
+
+.content-1 > div > div > .new-customer-text {
+  width: 115px;
+  height: 70px;
+  display: block;
+  padding: 8px 0px;
+}
+
+.new-customer-text > a {
+  display: block;
+  width: 100%;
+  height: 18px;
+  line-height: initial;
+}
+
+.new-customer-text > a:first-child {
+  font-weight: bold;
+}
+
 .menu-bar {
   position: relative;
   padding: 0px 10px 0px 10px;
+}
+
+.content-2 {
+  height: 9009px;
+  width: 1220px;
 }/*# sourceMappingURL=style.css.map */

@@ -114,20 +114,26 @@ function App() {
         </div>
         <div>
           <div className='new-customer'>
-      
           </div>
           <div>
-          
+            <div className='new-customer-video'>
+            </div>
+            <div className='new-customer-text'>
+              <a>新客好康</a>
+              <a>註冊抽mo幣！</a>
+            </div>
           </div>
         </div>
         <div>
           <div className='TV-shop'>
             
           </div>
+          <div className='TV-shop-video'>
+          
+          </div>
           <div>
           
           </div>
-          
         </div>
       </div>
       <div className='content-2 coding'>
