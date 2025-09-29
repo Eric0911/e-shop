@@ -119,24 +119,71 @@ function App() {
             <div className='new-customer-video'>
             </div>
             <div className='new-customer-text'>
-              <a>新客好康</a>
-              <a>註冊抽mo幣！</a>
+              <a href='/'>新客好康</a>
+              <a href='/'>註冊抽mo幣!</a>
             </div>
           </div>
         </div>
         <div>
           <div className='TV-shop'>
-            
-          </div>
-          <div className='TV-shop-video'>
-          
           </div>
           <div>
-          
+            <div className='TV-shop-video'>
+            </div>
+            <div className='TV-shop-text'>
+              <a href='/'>
+                <span className='TV-shop-text-1'>01台LIVE</span>
+                <span className='TV-shop-text-2'>細胞能量 高效養護修復神褲2入</span>
+                <span className='TV-shop-text-3'>$3,860</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div className='content-2 coding'>
+      <div className='content-2'>
+        <div className='content-2-row1'>
+          <div className='flash-sale'>
+            <div className='flash-sale-title'></div>
+            <div className='flash-sale-content'></div>
+          </div>
+          <div  className='hot-today'>
+            <div className='hot-sale'>
+              <div className='hot-sale-title'></div>
+              <div className='hot-sale-content'></div>
+            </div>
+            <div className='hot-item'></div>
+          </div>
+        </div>
+        <div className='content-2-row2'>
+          <div className='may-like'>
+            <div className=''></div>
+            <div className=''></div>
+          </div>
+          <div  className=''>
+            <div className='everyone-buy'>
+              <div className=''></div>
+              <div className=''></div>
+            </div>
+            <div className='hot-track'></div>
+          </div>
+        </div>
+        <div className='content-2-row3'></div>
+        <div className='content-2-row4'>
+          <div className='hot-menu'>
+            <li>生活家電</li>
+            <li>3C資訊</li>
+            <li>生活用品</li>
+            <li>居家餐廚</li>
+            <li>保健樂活</li>
+            <li>美妝保養</li>
+            <li>流行精品</li>
+            <li>團購美食</li>
+            <li>休閒旅遊</li>
+            <li>電視購物</li>
+            <li>暢銷書榜</li>
+          </div>
+          <div className='hot-contect'></div>
+        </div>
       </div>
       <div className='friend-link coding'>
       </div>
