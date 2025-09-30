@@ -184,6 +184,18 @@ function App() {
           </div>
           <div className='hot-contect'></div>
         </div>
+        <div className='content-2-row5'>
+          <div className='bank-new'>
+            <img src="/images/bank-new.png" alt="/"></img>
+          </div>
+          <div className='bank-contect'></div>
+        </div>
+        <div className='content-2-row6'>
+          <div className='good-vender'>
+            
+          </div>
+          <div className='member-vender'></div>
+        </div>
       </div>
       <div className='friend-link coding'>
       </div>

@@ -476,6 +476,7 @@ a{
     background-repeat: no-repeat;           /* 不重複平鋪 */
     background-size: cover;                 /* 等比例放大，鋪滿容器 */
     background-position: center center;     /* 圖片置中 */
+    border-bottom: 1px solid #a6a6a6;
 }
 
 .hot-menu > li {
@@ -487,6 +488,35 @@ a{
     line-height: 40px;  
 }
 
+.hot-contect {
+    width: 100%;
+    height: 250px;
+    background: #F2F2F2;
+    padding: 30px 60px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.bank-new > img {
+    width: 100%;
+    height: 60px;
+}
+
+.bank-contect {
+    width: 100%;
+    height: 130px;
+}
+
+.content-2-row6 {
+    margin: 30px 0px 0px 0px;
+    display: flex;
+}
+
+.good-vender {
+    width: 752px;
+    height: 540px;
+    margin: 0px 38px 0px 0px;
+}
 
 @media screen and (min-width: 1220px) {
 }
