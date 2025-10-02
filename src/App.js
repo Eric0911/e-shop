@@ -335,8 +335,37 @@ function App() {
             <div className='content'></div>
           </div>
         </div>
+        <div className='content-2-row8'>
+          <div className='promotion'>
+            <span>好康特賣</span>
+            <img src="/images/promotion1.jpg" alt="/"></img>
+          </div>
+          <div className='promotion'>
+            <span>精選推薦</span>
+            <img src="/images/promotion2.jpg" alt="/"></img>
+          </div>
+          <div className='promotion'>
+            <span>銀行好康</span>
+            <img src="/images/promotion3.jpg" alt="/"></img>
+          </div>
+          <div className='promotion'>
+            <span>momo同樂會</span>
+            <img src="/images/promotion4.jpg" alt="/"></img>
+          </div>
+        </div>
+        <div className='content-2-row9'>
+            <img src="/images/policy-advocacy.png" alt="/"></img>
+        </div>
       </div>
-      <div className='friend-link coding'>
+      <div className='friend-link'>
+        <div>
+          <img src="/images/friend-link1.jpg" alt="/"></img>
+          <img src="/images/friend-link2.jpg" alt="/"></img>
+          <img src="/images/friend-link3.jpg" alt="/"></img>
+          <img src="/images/friend-link4.jpg" alt="/"></img>
+          <img src="/images/friend-link5.jpg" alt="/"></img>
+          <img src="/images/friend-link6.jpg" alt="/"></img>
+        </div>
       </div>
       <div className='facebook-area coding'>
       </div>
