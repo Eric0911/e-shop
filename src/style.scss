@@ -512,10 +512,189 @@ a{
     display: flex;
 }
 
-.good-vender {
+.good-venue {
     width: 752px;
     height: 540px;
     margin: 0px 38px 0px 0px;
+}
+
+.good-venue > div:first-child {
+    height: 40px;
+    width: 752px;
+    background: no-repeat center / 100% 100% url(images/good-venue.png);
+    border-bottom: 1px solid #a6a6a6;
+}
+
+.venue-banner {
+    margin: 30px 0px 0px 0px;
+    height: 470px;
+    width: 752px;
+}
+
+.banner-run > img {
+    height: 255px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+}
+
+.banner-fix > img {
+    height: 215px;
+    width: 188px;
+}
+
+.banner-fix > img:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+.banner-fix > img:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+.member-benefit > div:first-child {
+    height: 40px;
+    width: 430px;
+    background: no-repeat center / 100% 100% url(images/member-benefit.png);
+    border-bottom: 1px solid #a6a6a6;
+}
+
+.member-benefit > div:last-child {
+    height: 270px;
+    width: 430px;
+    padding: 30px 15px 0px 15px
+}
+
+.select-brand > div:first-child {
+    height: 40px;
+    width: 430px;
+    background: no-repeat center / 100% 100% url(images/select-brand.png);
+    border-bottom: 1px solid #a6a6a6;
+}
+
+.select-brand > div:last-child {
+    height: 190px;
+    width: 430px;
+    padding: 20px 25px 10px 25px;
+    background: #F2F2F2;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.content-2-row7 > div {
+    margin: 35px 0px 0px 0px;
+    float: left;
+    width: 1216px;
+    height: 442px;
+}
+
+.mouth-promotion, .life-goods, .beauty-care, .furniture, .vedio-book, .health-care, .entertainment, .home-appliances, .CCC, .shoes-bags, .clothes, .food, .large-furniture{
+    border: 4px solid #F2195B;
+    border-right: 0px;
+    border-bottom: 0px;
+    box-sizing: content-box;
+}
+
+.life-goods, .furniture {
+    border-color: #38CCB2;
+}
+
+.beauty-care, .entertainment {
+    border-color: #F86A6F;
+}
+
+.vedio-book {
+    border-color: #997D56;
+}
+
+.health-care {
+    border-color: #62B616;
+}
+
+.home-appliances {
+    border-color: #0F3B78;
+}
+
+.CCC {
+    border-color: #4E87C1;
+}
+
+.shoes-bags {
+    border-color: #774793;
+}
+
+.clothes {
+    border-color: #F97CC0;
+}
+
+.food {
+    border-color: #F06922;
+}
+
+.large-furniture {
+    border-color: #F86A6F;
+}
+
+.title {
+    height: 40px;
+    display: flex;
+    border-bottom: 2px solid #FFFFFF;
+    box-sizing: content-box;
+}
+
+.title > div:first-child {
+    width: 137px;
+    display: block;
+    margin: 0px;
+    background-color: #F2195B;
+}
+
+.life-goods > .title > div:first-child, .furniture > .title > div:first-child {
+    background-color: #38CCB2;
+}
+
+.beauty-care > .title > div:first-child, .entertainment > .title > div:first-child {
+    background-color: #F86A6F;
+}
+
+.vedio-book > .title > div:first-child {
+    background-color: #997D56;
+}
+
+.health-care > .title > div:first-child {
+    background-color: #62B616;
+}
+
+.home-appliances > .title > div:first-child {
+    background-color: #0F3B78;
+}
+
+.CCC > .title > div:first-child {
+    background-color: #4E87C1;
+}
+
+.shoes-bags > .title > div:first-child {
+    background-color: #774793;
+}
+
+.food > .title > div:first-child {
+    background-color: #F06922;
+}
+
+.large-furniture > .title > div:first-child {
+    background-color: #F86A6F;
+}
+
+.title > div:first-child img {
+    width: 137px;
+    height: 40px;
+}
+
+.title > div:last-child {
+    width: 1079px;
+    display: block;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    background-color: #F0F0F0;
 }
 
 @media screen and (min-width: 1220px) {

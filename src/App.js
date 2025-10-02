@@ -191,10 +191,149 @@ function App() {
           <div className='bank-contect'></div>
         </div>
         <div className='content-2-row6'>
-          <div className='good-vender'>
-            
+          <div className='good-venue'>
+            <div></div>
+            <div className='venue-banner'>
+              <div className='banner-run'>
+                <img src="/images/banner-run.jpg" alt="/"></img>
+              </div>
+              <div className='banner-fix'>
+                <img src="/images/banner-fix_1.jpg" alt="/"></img>
+                <img src="/images/banner-fix_2.jpg" alt="/"></img>
+                <img src="/images/banner-fix_3.jpg" alt="/"></img>
+                <img src="/images/banner-fix_4.jpg" alt="/"></img>
+              </div>
+            </div>
           </div>
-          <div className='member-vender'></div>
+          <div>
+            <div className='member-benefit'>
+              <div></div>
+              <div></div>
+            </div>
+            <div className='select-brand'>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <div className='content-2-row7'>
+          <div className='mouth-promotion'>
+            <div className='title'>
+              <div>
+                <img src="/images/mouth-promotion.png" alt="/"></img>
+              </div>
+              <div></div>
+            </div>
+            <div className='content'></div>
+          </div>
+          <div className='life-goods'>
+            <div className='title'>
+              <div>
+                <img src="/images/life-goods.png" alt="/"></img>
+              </div>
+              <div></div>
+            </div>
+            <div className='content'></div>
+          </div>
+          <div className='beauty-care'>
+            <div className='title'>
+              <div>
+                <img src="/images/beauty-care.png" alt="/"></img>
+              </div>
+              <div></div>
+            </div>
+            <div className='content'></div>
+          </div>
+          <div className='furniture'>
+            <div className='title'>
+              <div>
+                <img src="/images/furniture.png" alt="/"></img>
+              </div>
+              <div></div>
+            </div>
+            <div className='content'></div>
+          </div>
+          <div className='vedio-book'>
+            <div className='title'>
+              <div>
+                <img src="/images/vedio-book.png" alt="/"></img>
+              </div>
+              <div></div>
+            </div>
+            <div className='content'></div>
+          </div>
+          <div className='health-care'>
+            <div className='title'>
+              <div>
+                <img src="/images/health-care.png" alt="/"></img>
+              </div>
+              <div></div>
+            </div>
+            <div className='content'></div>
+          </div>
+          <div className='entertainment'>
+            <div className='title'>
+              <div>
+                <img src="/images/entertainment.jpg" alt="/"></img>
+              </div>
+              <div></div>
+            </div>
+            <div className='content'></div>
+          </div>
+          <div className='home-appliances'>
+            <div className='title'>
+              <div>
+                <img src="/images/home-appliances.png" alt="/"></img>
+              </div>
+              <div></div>
+            </div>
+            <div className='content'></div>
+          </div>
+          <div className='CCC'>
+            <div className='title'>
+              <div>
+                <img src="/images/3C.png" alt="/"></img>
+              </div>
+              <div></div>
+            </div>
+            <div className='content'></div>
+          </div>
+          <div className='shoes-bags'>
+            <div className='title'>
+              <div>
+                <img src="/images/shoes-bags.png" alt="/"></img>
+              </div>
+              <div></div>
+            </div>
+            <div className='content'></div>
+          </div>
+          <div className='clothes'>
+            <div className='title'>
+              <div>
+                <img src="/images/clothes.png" alt="/"></img>
+              </div>
+              <div></div>
+            </div>
+            <div className='content'></div>
+          </div>
+          <div className='food'>
+            <div className='title'>
+              <div>
+                <img src="/images/food.png" alt="/"></img>
+              </div>
+              <div></div>
+            </div>
+            <div className='content'></div>
+          </div>
+          <div className='large-furniture'>
+            <div className='title'>
+              <div>
+                <img src="/images/large-furniture.png" alt="/"></img>
+              </div>
+              <div></div>
+            </div>
+            <div className='content'></div>
+          </div>
         </div>
       </div>
       <div className='friend-link coding'>
