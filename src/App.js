@@ -367,9 +367,69 @@ function App() {
           <img src="/images/friend-link6.jpg" alt="/"></img>
         </div>
       </div>
-      <div className='facebook-area coding'>
+      <div className='facebook-area'>
+        <button>
+          <img src="/images/praise.png" alt="/"></img>
+          <a href='/'>讚</a>
+        </button>
+        <a href='/'>152萬人說這個讚。成為朋友中第一個說讚的人。</a>
       </div>
-      <div className='footer-1 coding'>
+      <div className='footer-1'>
+        <div>
+          <div>
+            <div className='anti-fraud'>防詐騙提醒：yoyo絕不會以電話或簡訊通知訂單/分期出錯、或變更付款方式，更不會要您前往ATM進行任何操作！不應在yoyo以外的任何地方輸入yoyo帳密(例如非政府官方的電子發票app)，以免權益受損！</div>
+            <div className='detail-list'>
+              <div className='about-us'>
+                <div>關於我們</div>
+                <div>yoyo官網</div>
+                <div>招商專區</div>
+                <div>人才招募</div>
+              </div>
+              <div className='feature-service'>
+                <div>特色服務</div>
+                <div>大宗採購方案</div>
+                <div>異業合作</div>
+                <div>yoyo幣企業採購</div>
+              </div>
+              <div className='member-rights'>
+                <div>會員權益</div>
+                <div>客戶隱私權政策</div>
+                <div>客戶權利義務</div>
+                <div>網路安全標章</div>
+                <div>包裝減量標章</div>
+                <div>防詐騙宣導</div>
+                <div>碳足跡標籤</div>
+              </div>
+              <div className='series-webs'>
+                <div>系列網站</div>
+                <div>momoFB粉絲團</div>
+                <div>momo好物交流社團</div>
+                <div>momo官方IG</div>
+                <div>momo富立保險</div>
+              </div>
+              <div className='customer-service'>
+                <div>客戶服務</div>
+                <div>訂單/配送進度查詢</div>
+                <div>取消訂單/退貨</div>
+                <div>更改配送地址</div>
+                <div>追蹤清單</div>
+                <div>快速到貨服務</div>
+                <div>折價券說明</div>
+                <div>FAQ 常見問題</div>
+                <div>聯絡我們</div>
+              </div>
+              <div className='app'>
+                <div>行動購物APP</div>
+                <div>
+                  <img src="/images/App-QRcode.jpg" alt="/"></img>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="/images/shopping-cart.png" alt="/"></img>
+          </div>
+        </div>
       </div>
       <div className='footer-2 coding'>
       </div>

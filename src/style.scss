@@ -330,7 +330,7 @@ a{
     height: 18px;
     overflow: hidden;
     line-height: initial;
-    font: 12px / 18px BlinkMacSystemFont;
+    font: 12px / 18px "Microsoft JhengHei UI","SF Pro TC","SF Pro Text","SF Pro Icons","PingFang TC",Helvetica,Arial,sans-serif,"BlinkMacSystemFont","Segoe UI",Roboto,"Helvetica Neue",system-ui,-apple-system;
 }
 
 .TV-shop-text-1 {
@@ -351,7 +351,7 @@ a{
 
 .TV-shop-text-3 {
     color: #d62872;
-    font: normal 20px / 20px BlinkMacSystemFont;
+    font: normal 20px / 20px "Microsoft JhengHei UI","SF Pro TC","SF Pro Text","SF Pro Icons","PingFang TC",Helvetica,Arial,sans-serif,"BlinkMacSystemFont","Segoe UI",Roboto,"Helvetica Neue",system-ui,-apple-system;
     margin: 0 0 4px 0;
     overflow: initial;
 }
@@ -482,7 +482,7 @@ a{
     width: fit-content;
     height: 40px;
     padding: 0px 15px;
-    font: normal 13px / 20px BlinkMacSystemFont; 
+    font: normal 13px / 20px "Microsoft JhengHei UI","SF Pro TC","SF Pro Text","SF Pro Icons","PingFang TC",Helvetica,Arial,sans-serif,"BlinkMacSystemFont","Segoe UI",Roboto,"Helvetica Neue",system-ui,-apple-system; 
     line-height: 40px;  
 }
 
@@ -714,7 +714,7 @@ a{
 }
 
 .promotion > span {
-    font: bold 17px / 35px BlinkMacSystemFont; 
+    font: bold 17px / 35px "Microsoft JhengHei UI","SF Pro TC","SF Pro Text","SF Pro Icons","PingFang TC",Helvetica,Arial,sans-serif,"BlinkMacSystemFont","Segoe UI",Roboto,"Helvetica Neue",system-ui,-apple-system; 
     height: 35px;
     width: 175px;
     overflow: hidden;
@@ -734,7 +734,7 @@ a{
 }
 
 .friend-link {
-    width: 100%;
+    width: 1220px;
     height: 88px;
     display: flex;
     padding: 14px 0px;
@@ -756,5 +756,111 @@ a{
     margin: 0px;
 }
 
+.facebook-area {
+    width: 1220px;
+    display: flex;
+    height: 80px;
+    background-color: #31384A;
+    padding: 5px 0px 0px 5px;
+}
+
+.facebook-area > button {
+    border-radius: 3px;
+    font-size: 12px;
+    height: 20px;
+    padding: 0px 6px;
+    background-color: #1877F2;
+    border: 0px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.facebook-area > button > img, .facebook-area > button > a {
+    height: 16px;
+    width: 16px;
+    display: block;
+}
+
+.facebook-area > button > a {
+    line-height: 16px;
+    padding: 0px 4px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.facebook-area > a {
+    font-size: 12px;
+    display: flex;
+    line-height: 1.28;
+    padding: 0px 0px 0px 5px;
+    height: 20px;
+    align-items: center;
+}
+
+.footer-1 {
+    margin: 0px;
+    display: flex;
+    width: 100%;
+    background-color: #31384A;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.footer-1 > div {
+    margin: 0px auto;
+    width: 1220px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer-1 > div > div:first-child {
+    padding: 50px 0px;
+}
+
+.anti-fraud {
+    width: 874px;
+    height: 38px;
+    padding: 10px;
+    border: 2.5px solid #95C8CD;
+    color: #95C8CD;
+    font: bold 15px / 19px "Microsoft JhengHei UI","SF Pro TC","SF Pro Text","SF Pro Icons","PingFang TC",Helvetica,Arial,sans-serif,"BlinkMacSystemFont","Segoe UI",Roboto,"Helvetica Neue",system-ui,-apple-system;
+    border-radius: 10px;
+    margin: 0px 0px 30px 26px;
+    box-sizing: content-box;
+}
+
+.detail-list {
+    display: flex;
+}
+
+.detail-list > div {
+    display: block;
+    width: 130px;
+    text-align: left;
+    margin: 0px 0px 0px 26px;
+}
+
+.detail-list > div > div {
+    color: #CCCCCC;
+    font: bold 13px / 18px "Microsoft JhengHei UI","SF Pro TC","SF Pro Text","SF Pro Icons","PingFang TC",Helvetica,Arial,sans-serif,"BlinkMacSystemFont","Segoe UI",Roboto,"Helvetica Neue",system-ui,-apple-system;
+    margin: 4px 0px 0px 0px;
+}
+
+.detail-list > div > div:first-child {
+    color: #95C8CD;
+    font: bold 19px / 19px "Microsoft JhengHei UI","SF Pro TC","SF Pro Text","SF Pro Icons","PingFang TC",Helvetica,Arial,sans-serif,"BlinkMacSystemFont","Segoe UI",Roboto,"Helvetica Neue",system-ui,-apple-system;
+    margin: 0px 0px 21px 0px;
+}
+
+.app > div:last-child > img{
+    width: 114px;
+    height: 114px;
+}
+
 @media screen and (min-width: 1220px) {
+    .facebook-area, .friend-link {
+        width: 100%;
+    }
 }
