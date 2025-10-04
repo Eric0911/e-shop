@@ -859,6 +859,32 @@ a {
   height: 114px;
 }
 
+.footer-2 {
+  padding: 20px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-2 > a {
+  width: fit-content;
+  color: #333333;
+  font: 13px/18px Helvetica;
+  padding: 0px 15px;
+}
+
+.footer-3 {
+  padding: 25px 0px 35px 0px;
+  max-width: 1220px;
+  font: 13px/20px Helvetica;
+  color: #888888;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.footer-3 > span {
+  display: block;
+}
+
 @media screen and (min-width: 1220px) {
   .facebook-area, .friend-link {
     width: 100%;
