@@ -175,13 +175,27 @@ div {
   align-items: center;
 }
 
+.left-menu > li > a, .right-menu > li > a {
+  position: relative;
+  padding: 0px 10px 0px 10px;
+}
+
+.left-menu > li:not(:first-child) > a::before, .right-menu > li:not(:first-child) > a::before {
+  content: "";
+  width: 1px;
+  height: 7px;
+  background-color: #000000;
+  top: calc((100% - 7px) / 2);
+  position: absolute;
+  left: 0px;
+}
+
 .left-menu > li:first-child {
   padding: 0px 10px 0px 25px;
 }
 
 .menu-bar {
   position: relative;
-  padding: 0px 10px 0px 10px;
 }
 
 .sales-promotion > li {
@@ -883,6 +897,19 @@ a {
 
 .footer-3 > span {
   display: block;
+}
+
+.digital-CS {
+  z-index: 99;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+}
+
+.digital-CS > img {
+  width: 110px;
+  height: 110px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1220px) {
