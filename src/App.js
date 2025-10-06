@@ -7,16 +7,16 @@ function App() {
         <div className='gray-background'>
           <div className='fix-header'>
             <ul className='left-menu'>
-              <li><a href='/'>回首頁</a></li>
+              <li className='cursor-color'><a href='/'>回首頁</a></li>
             </ul>
             <ul className='right-menu'>
-              <li className='menu-bar'><a href='/'>登入</a></li>
-              <li className='menu-bar'><a href='/'>註冊</a></li>
-              <li className='menu-bar'><a href='/'>會員中心</a></li>
-              <li className='menu-bar'><a href='/'>查訂單</a></li>
-              <li className='menu-bar'><a href='/'>追蹤清單</a></li>
-              <li className='menu-bar'><a href='/'>折價券</a></li>
-              <li className='menu-bar'><a href='/'>購物車</a></li>
+              <li className='menu-bar cursor-color'><a href='/'>登入</a></li>
+              <li className='menu-bar cursor-color'><a href='/'>註冊</a></li>
+              <li className='menu-bar cursor-color'><a href='/'>會員中心</a></li>
+              <li className='menu-bar cursor-color'><a href='/'>查訂單</a></li>
+              <li className='menu-bar cursor-color'><a href='/'>追蹤清單</a></li>
+              <li className='menu-bar cursor-color'><a href='/'>折價券</a></li>
+              <li className='menu-bar cursor-color'><a href='/'>購物車</a></li>
             </ul>
           </div>
         </div>
@@ -25,9 +25,14 @@ function App() {
             <div className='logo'>
               LOGO
             </div>
-            <div className='search-bar'>
-              <input type="text" placeholder='請輸入關鍵字或品號' />
-              <button>搜尋</button>
+            <div>
+              <div className='search-bar'>
+                <input type="text" placeholder='請輸入關鍵字或品號' />
+                <button>搜尋</button>
+              </div>
+              <div>
+
+              </div>
             </div>
             <div className='sales-promotion'>
               <li>
@@ -118,9 +123,11 @@ function App() {
           <div>
             <div className='new-customer-video'>
             </div>
-            <div className='new-customer-text'>
-              <a href='/'>新客好康</a>
-              <a href='/'>註冊抽mo幣!</a>
+            <div className='new-customer-text cursor-color'>
+              <a href='/'>
+                <span>新客好康</span>
+                <span>註冊抽mo幣!</span>
+              </a>
             </div>
           </div>
         </div>
@@ -130,7 +137,7 @@ function App() {
           <div>
             <div className='TV-shop-video'>
             </div>
-            <div className='TV-shop-text'>
+            <div className='TV-shop-text cursor-color'>
               <a href='/'>
                 <span className='TV-shop-text-1'>01台LIVE</span>
                 <span className='TV-shop-text-2'>細胞能量 高效養護修復神褲2入</span>
@@ -379,46 +386,46 @@ function App() {
           <div>
             <div className='anti-fraud'>防詐騙提醒：yoyo絕不會以電話或簡訊通知訂單/分期出錯、或變更付款方式，更不會要您前往ATM進行任何操作！不應在yoyo以外的任何地方輸入yoyo帳密(例如非政府官方的電子發票app)，以免權益受損！</div>
             <div className='detail-list'>
-              <div className='about-us'>
+              <div className='about-us cursor-color'>
                 <div>關於我們</div>
-                <div>yoyo官網</div>
-                <div>招商專區</div>
-                <div>人才招募</div>
+                <a href='/'>yoyo官網</a>
+                <a href='/'>招商專區</a>
+                <a href='/'>人才招募</a>
               </div>
-              <div className='feature-service'>
+              <div className='feature-service cursor-color'>
                 <div>特色服務</div>
-                <div>大宗採購方案</div>
-                <div>異業合作</div>
-                <div>yoyo幣企業採購</div>
+                <a href='/'>大宗採購方案</a>
+                <a href='/'>異業合作</a>
+                <a href='/'>yoyo幣企業採購</a>
               </div>
-              <div className='member-rights'>
+              <div className='member-rights cursor-color'>
                 <div>會員權益</div>
-                <div>客戶隱私權政策</div>
-                <div>客戶權利義務</div>
-                <div>網路安全標章</div>
-                <div>包裝減量標章</div>
-                <div>防詐騙宣導</div>
-                <div>碳足跡標籤</div>
+                <a href='/'>客戶隱私權政策</a>
+                <a href='/'>客戶權利義務</a>
+                <a href='/'>網路安全標章</a>
+                <a href='/'>包裝減量標章</a>
+                <a href='/'>防詐騙宣導</a>
+                <a href='/'>碳足跡標籤</a>
               </div>
-              <div className='series-webs'>
+              <div className='series-webs cursor-color'>
                 <div>系列網站</div>
-                <div>momoFB粉絲團</div>
-                <div>momo好物交流社團</div>
-                <div>momo官方IG</div>
-                <div>momo富立保險</div>
+                <a href='/'>momoFB粉絲團</a>
+                <a href='/'>momo好物交流社團</a>
+                <a href='/'>momo官方IG</a>
+                <a href='/'>momo富立保險</a>
               </div>
-              <div className='customer-service'>
+              <div className='customer-service cursor-color'>
                 <div>客戶服務</div>
-                <div>訂單/配送進度查詢</div>
-                <div>取消訂單/退貨</div>
-                <div>更改配送地址</div>
-                <div>追蹤清單</div>
-                <div>快速到貨服務</div>
-                <div>折價券說明</div>
-                <div>FAQ 常見問題</div>
-                <div>聯絡我們</div>
+                <a href='/'>訂單/配送進度查詢</a>
+                <a href='/'>取消訂單/退貨</a>
+                <a href='/'>更改配送地址</a>
+                <a href='/'>追蹤清單</a>
+                <a href='/'>快速到貨服務</a>
+                <a href='/'>折價券說明</a>
+                <a href='/'>FAQ 常見問題</a>
+                <a href='/'>聯絡我們</a>
               </div>
-              <div className='app'>
+              <div className='app cursor-color'>
                 <div>行動購物APP</div>
                 <div>
                   <img src="/images/App-QRcode.jpg" alt="/"></img>

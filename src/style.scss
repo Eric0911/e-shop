@@ -329,14 +329,14 @@ a{
     padding: 8px 0px;
 }
 
-.new-customer-text > a {
+.new-customer-text > a > span {
     display: block;
     width: 100%;
     height: 18px;
     line-height: initial;
 }
 
-.new-customer-text > a:first-child {
+.new-customer-text > a > span:first-child {
     font-weight: bold;
 } 
 
@@ -858,10 +858,11 @@ a{
     margin: 0px 0px 0px 26px;
 }
 
-.detail-list > div > div {
+.detail-list > div > a {
     color: #CCCCCC;
     font: bold 13px / 18px "Microsoft JhengHei UI","SF Pro TC","SF Pro Text","SF Pro Icons","PingFang TC",Helvetica,Arial,sans-serif,"BlinkMacSystemFont","Segoe UI",Roboto,"Helvetica Neue",system-ui,-apple-system;
     margin: 4px 0px 0px 0px;
+    display: block;
 }
 
 .detail-list > div > div:first-child {
@@ -912,6 +913,10 @@ a{
     width: 110px;
     height: 110px;
     cursor: pointer;
+}
+
+.cursor-color > a:hover {
+    color :#D62872
 }
 
 @media screen and (min-width: 1220px) {
