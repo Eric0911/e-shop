@@ -30,8 +30,14 @@ function App() {
                 <input type="text" placeholder='請輸入關鍵字或品號' />
                 <button>搜尋</button>
               </div>
-              <div>
-
+              <div className='under-search'>
+                <li>熱門 &gt;</li>
+                <li><a href='/'>買一送一</a></li>
+                <li><a href='/'>即享券</a></li>
+                <li><a href='/'>月餅</a></li>
+                <li><a href='/'>飛利浦</a></li>
+                <li><a href='/'>BTP</a></li>
+                <li><a href='/'>CK</a></li>
               </div>
             </div>
             <div className='sales-promotion'>
@@ -438,7 +444,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='footer-2'>
+      <div className='footer-2  cursor-color'>
           <a href='/'>關於我們</a>
           <a href='/'>人才招募</a>
           <a href='/'>招商專區</a>

@@ -114,6 +114,10 @@ div {
   color: #43ADC7;
 }
 
+.search-bar {
+  padding: 0px 0px 8px 0px;
+}
+
 .search-bar input, .search-bar button {
   box-sizing: border-box;
   height: 32px;
@@ -138,6 +142,33 @@ div {
   background: #454545;
   color: #ffffff;
   font: bold 15px/36px var(--primary-font-family);
+}
+
+.under-search {
+  display: flex;
+}
+
+.under-search > li:first-child, .under-search > li > a {
+  color: #D62872;
+  padding: 0px 5px 0px 0px;
+  display: flex;
+  align-items: center;
+  height: 24px;
+  font: 13px/14px "Microsoft JhengHei UI", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", Helvetica, Arial, sans-serif, "BlinkMacSystemFont", "Segoe UI", Roboto, "Helvetica Neue", system-ui, -apple-system;
+}
+
+.under-search > li > a {
+  padding: 0px 10px;
+  position: relative;
+}
+
+.under-search > li:nth-child(n+3) > a::before {
+  content: "";
+  width: 1px;
+  height: 14px;
+  background-color: #D62872;
+  position: absolute;
+  left: 0px;
 }
 
 .sales-promotion > li > a > img {
@@ -166,6 +197,7 @@ div {
   border-top-right-radius: 5px;
   margin-left: 2px;
   padding: 8px 15px;
+  cursor: pointer;
 }
 
 .left-menu, .right-menu {
@@ -381,6 +413,16 @@ a {
   width: 1220px;
   height: 570px;
   margin: 40px 0px 0px 0px;
+}
+
+.footer-2 > a:not(:first-child)::before {
+  content: "";
+  width: 1px;
+  height: 7px;
+  background-color: #AAAAAA;
+  position: absolute;
+  left: 0px;
+  top: calc((100% - 7px) / 2);
 }
 
 .flash-sale {
@@ -885,6 +927,7 @@ a {
   color: #333333;
   font: 13px/18px Helvetica;
   padding: 0px 15px;
+  position: relative;
 }
 
 .footer-3 {
