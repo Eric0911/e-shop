@@ -8,6 +8,10 @@ function App() {
           <div className='fix-header'>
             <ul className='left-menu'>
               <li className='cursor-color'><a href='/'>回首頁</a></li>
+              <div className='buried-search'>
+                <input type="text" placeholder='請輸入關鍵字或品號' />
+                <button>搜尋</button>
+              </div>
             </ul>
             <ul className='right-menu'>
               <li className='menu-bar cursor-color'><a href='/'>登入</a></li>

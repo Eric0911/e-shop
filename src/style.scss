@@ -113,11 +113,11 @@ div{
     color: #43ADC7;
 } 
 
-.search-bar {
+.search-bar, .buried-search {
     padding: 0px 0px 8px 0px;
 }
 
-.search-bar input, .search-bar button {
+.search-bar input, .search-bar button, .buried-search input, .buried-search button {
     box-sizing: border-box;
     height: 32px;
     border: 2px solid #454545;
@@ -125,7 +125,7 @@ div{
     vertical-align: middle;
 }
 
-.search-bar input {
+.search-bar input, .buried-search input {
     width: 350px;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
@@ -133,7 +133,7 @@ div{
     font-size: 15px;
 } 
 
-.search-bar button {
+.search-bar button, .buried-search button {
     width: 90px;
     border: 2px solid #454545;
     border-top-right-radius: 16px;
@@ -224,6 +224,10 @@ div{
 
 .left-menu > li:first-child {
     padding: 0px 10px 0px 25px;
+}
+
+.buried-search {
+    display: none;
 }
 
 .menu-bar {
