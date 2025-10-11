@@ -9,7 +9,7 @@ function App() {
             <ul className='left-menu'>
               <li className='cursor-color'><a href='/'>回首頁</a></li>
               <div className='buried-search'>
-                <input type="text" placeholder='請輸入關鍵字或品號' />
+                <input id="buried-input" type="text" placeholder='請輸入關鍵字或品號' />
                 <button>搜尋</button>
               </div>
             </ul>
@@ -31,7 +31,7 @@ function App() {
             </div>
             <div>
               <div className='search-bar'>
-                <input type="text" placeholder='請輸入關鍵字或品號' />
+                <input id="search-input" type="text" placeholder='請輸入關鍵字或品號' />
                 <button>搜尋</button>
               </div>
               <div className='under-search'>

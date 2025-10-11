@@ -20,6 +20,10 @@ div {
   width: 100%;
   display: block;
   box-sizing: border-box;
+  z-index: 99;
+  position: fixed;
+  top: 0px;
+  height: 40px;
 }
 
 .sales-promotion {
@@ -40,11 +44,17 @@ div {
   font-size: 12px;
   display: flex;
   justify-content: space-between;
+  z-index: 99;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .header {
   display: block;
   align-items: center;
+  margin-top: 40px;
 }
 
 .search-area {
@@ -114,11 +124,16 @@ div {
   color: #43ADC7;
 }
 
-.search-bar, .buried-search {
+.search-bar {
   padding: 0px 0px 8px 0px;
 }
 
-.search-bar input, .search-bar button, .buried-search input, .buried-search button {
+.buried-search.apper {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input, .search-bar button, .buried-search.apper > input, .buried-search.apper > button {
   box-sizing: border-box;
   height: 32px;
   border: 2px solid #454545;
@@ -126,7 +141,11 @@ div {
   vertical-align: middle;
 }
 
-.search-bar input, .buried-search input {
+.buried-search.apper > input, .buried-search.apper > button {
+  border: 0px;
+}
+
+.search-bar input, .buried-search.apper > input {
   width: 350px;
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
@@ -134,14 +153,26 @@ div {
   font-size: 15px;
 }
 
-.search-bar button, .buried-search button {
+.buried-search.apper > input {
+  width: 315px;
+  height: 28px;
+}
+
+.search-bar button, .buried-search.apper > button {
   width: 90px;
   border: 2px solid #454545;
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
   background: #454545;
   color: #ffffff;
-  font: bold 15px/36px var(--primary-font-family);
+  font: bold 15px "Microsoft JhengHei UI", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", Helvetica, Arial, sans-serif, "BlinkMacSystemFont", "Segoe UI", Roboto, "Helvetica Neue", system-ui, -apple-system;
+}
+
+.buried-search.apper > button {
+  width: 70px;
+  border: 0px;
+  height: 28px;
+  background: #A0A0A0;
 }
 
 .under-search {

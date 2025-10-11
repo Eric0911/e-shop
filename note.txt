@@ -3,5 +3,5 @@
 
 發佈程式到GitHub
 1.git add .
-2.git commit -m "新增footer-2的偽元素"
+2.git commit -m "我要開始導入JS，為了避免有什麼不可還原的問題，先存檔"
 3.git push
