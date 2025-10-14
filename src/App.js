@@ -1,6 +1,9 @@
 import './style.css';
+import React from "react";
+import Slide from "./slide.js";
 
 function App() {
+  
   return (
     <div className="App">
       <header>
@@ -105,7 +108,7 @@ function App() {
           </div> 
         </div>
         <div className='banner-middle'>
-          <img src="/images/banner_0.jpg" alt="/"></img>
+          <Slide />
         </div> 
         <div className='banner-right'>
           <div className='banner-right-title'>

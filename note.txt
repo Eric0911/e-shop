@@ -3,5 +3,5 @@
 
 發佈程式到GitHub
 1.git add .
-2.git commit -m "我要開始導入JS，為了避免有什麼不可還原的問題，先存檔"
+2.git commit -m "新增搜尋列在網頁往下拉的時候，fix-header會固定在網頁最上方並出現搜尋欄位，再加上處理掉search的input沒有id的問題"
 3.git push
