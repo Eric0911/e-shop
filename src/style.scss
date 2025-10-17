@@ -284,6 +284,10 @@ a{
 
 .banner{
     height: 370px;
+    width: 100%;
+}
+
+.banner > div {
     width: 1220px;
     display: flex;
 }
@@ -321,18 +325,22 @@ a{
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-  }
+}
   
-  /* 圖片要完整放進去 */
-  .carousel-wrapper img {
+/* 圖片要完整放進去 */
+.carousel-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover; /* 保持比例填滿 */
     display: block;
-  }
+}
   
-  /* Swiper 預設點點樣式修改 */
-  .custom-swiper .swiper-pagination-bullet {
+.custom-swiper {
+    width: 818px;
+}
+
+/* Swiper 預設點點樣式修改 */
+.custom-swiper .swiper-pagination-bullet {
     background: rgba(255, 255, 255, 0.7);
     opacity: 1;
     width: 6px;
@@ -340,21 +348,22 @@ a{
     border-radius: 3px;
     transition: all 0.3s ease;
     margin: 0 4px !important;
-  }
-  
-  /* 當前頁的點點變寬 */
-  .custom-swiper .swiper-pagination-bullet-active {
+}
+
+/* 當前頁的點點變寬 */
+.custom-swiper .swiper-pagination-bullet-active {
     background: white;
     width: 24px; /* 變寬的效果 */
     height: 6px;
     border-radius: 3px;
-  }
-  
-  /* 讓 pagination 置中 */
-  .swiper-pagination {
+}
+
+/* 讓 pagination 置中 */
+.swiper-pagination {
     bottom: 10px !important;
     text-align: center;
-  }
+}
+
 
 .banner-right{
     width: 202px;

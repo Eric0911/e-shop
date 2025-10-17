@@ -283,6 +283,10 @@ a {
 
 .banner {
   height: 370px;
+  width: 100%;
+}
+
+.banner > div {
   width: 1220px;
   display: flex;
 }
@@ -328,6 +332,10 @@ a {
   height: 100%;
   object-fit: cover; /* 保持比例填滿 */
   display: block;
+}
+
+.custom-swiper {
+  width: 818px;
 }
 
 /* Swiper 預設點點樣式修改 */
