@@ -247,7 +247,107 @@ function App() {
               </div>
               <div></div>
             </div>
-            <div className='content'></div>
+            <div className='content'>
+              <div className='content-list'>
+                <a href='/'>熱銷榜</a>
+                <a href='/'>3C資訊</a>
+                <a href='/'>生活用品</a>
+                <a href='/'>家庭婦幼</a>
+                <a href='/'>精品鞋包</a>
+                <a href='/'>流行</a>
+                <a href='/'>家電</a>
+                <a href='/'>美妝</a>
+                <a href='/'>保健</a>
+                <a href='/'>食品</a>
+              </div>
+              <div className='content-items'>
+                <div className='brand'>
+                  <img src="/images/brand_00_0_0.jpg" alt="/"></img>
+                  <img src="/images/brand_00_0_1.jpg" alt="/"></img>
+                  <img src="/images/brand_00_0_2.jpg" alt="/"></img>
+                  <img src="/images/brand_00_0_3.jpg" alt="/"></img>
+                  <img src="/images/brand_00_0_4.jpg" alt="/"></img>
+                  <img src="/images/brand_00_0_5.jpg" alt="/"></img>
+                </div>
+                <div className='promo-image'>
+                  <img src="/images/promo-image_01.jpg" alt="/"></img>
+                </div>
+                <div className='promo-items'>
+                  <div>
+                    <div className='up-items'>
+                      <div>
+                        <a href="/">
+                          <img src="/images/00_ups_0.jpg" alt="/"></img>
+                          <div className='up-content'>德國雙人 SILVER IRON 銀光系列無塗層不易鏽中式鐵炒鍋30cm</div>
+                        </a>
+                        <div className='up-price'>
+                            <div>$7,080</div>
+                            <div>$7,080</div>
+                          </div>
+                      </div>
+                    </div>
+                    <div className='down-items'>
+                      <div>
+                        <div>樂扣樂扣 嚼對FUN飲不鏽鋼吸管杯 720ml</div>
+                        <div>$999</div>
+                        <div>$1,499</div>
+                      </div>
+                      <a href="/">
+                        <img src="/images/00_downs_0.png" alt="/"></img>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <div className='up-items'>
+                      <div>
+                        <a href="/">
+                          <img src="/images/00_ups_1.jpg" alt="/"></img>
+                          <div className='up-content'>金緻品 黃金擺件 祈福小石像 0.04錢</div>
+                        </a>
+                        <div className='up-price'>
+                            <div>$2,059</div>
+                            <div>$2,289</div>
+                          </div>
+                      </div>
+                    </div>
+                    <div className='down-items'>
+                      <div>
+                        <div>新肌霓 LAIMO來貘聯名煥膚調理敷膜</div>
+                        <div>$980</div>
+                        <div>$1,500</div>
+                      </div>
+                      <a href="/">
+                        <img src="/images/00_downs_1.png" alt="/"></img>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <div className='up-items'>
+                      <div>
+                        <a href="/">
+                          <img src="/images/00_ups_2.jpg" alt="/"></img>
+                          <div className='up-content'>BLUETTI AC50P 700W 戶外移動電源 120W太陽能板套組</div>
+                        </a>
+                        <div className='up-price'>
+                            <div>$19,900</div>
+                            <div>$22,000</div>
+                          </div>
+                      </div>
+                    </div>
+                    <div className='down-items'>
+                      <div>
+                        <div>鮮綠生活 嚴選新鮮蝦仁 共3包</div>
+                        <div>$899</div>
+                        <div>$2,530</div>
+                      </div>
+                      <a href="/">
+                        <img src="/images/00_downs_2.png" alt="/"></img>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div className='life-goods'>
             <div className='title'>

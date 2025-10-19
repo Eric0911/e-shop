@@ -3,5 +3,5 @@
 
 發佈程式到GitHub
 1.git add .
-2.git commit -m "完成Banner輪播的部分"
+2.git commit -m "完成content-2-row7欄位的雛形"
 3.git push

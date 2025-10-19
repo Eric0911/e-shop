@@ -801,6 +801,157 @@ a {
   background-color: #F2195B;
 }
 
+.content, .content-items {
+  display: flex;
+  margin: 0px;
+}
+
+.content-list {
+  width: 137px;
+  display: block;
+  background-color: #F0F0F0;
+}
+
+.content-list > a {
+  height: 40px;
+  display: block;
+  padding: 0px 20px 0px 10px;
+  width: 107px;
+  text-align: right;
+  color: #595959;
+  font: 13px/40px "Microsoft JhengHei UI", sans-serif;
+}
+
+.brand > img {
+  width: 135px;
+  height: 65px;
+  display: block;
+  cursor: pointer;
+}
+
+.promo-items {
+  display: flex;
+}
+
+.promo-items > div {
+  display: block;
+  width: 200px;
+}
+
+.up-items {
+  display: block;
+  width: 200px;
+  height: 275px;
+  border: 1px solid #ccc;
+  border-width: 0 1px 1px 0;
+  box-sizing: border-box;
+}
+
+.up-items > div {
+  position: relative;
+}
+
+.up-items > div > a {
+  vertical-align: top;
+}
+
+.up-items > div > a > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.up-content {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font: 12px/18px "Microsoft JhengHei UI", sans-serif;
+  color: #696969;
+  overflow: hidden;
+  height: 54px;
+  padding: 0px 10px;
+}
+
+.up-price {
+  display: flex;
+  padding: 0px 10px;
+  gap: 5px;
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.up-price > div:nth-child(1) {
+  display: inline-flex;
+  align-items: flex-end;
+  font: 22px/1 Century Gothic, sans-serif;
+  color: #d62872;
+  margin: 0;
+}
+
+.up-price > div:nth-child(2) {
+  display: inline-flex;
+  align-items: flex-end;
+  font: 13px/18px Century Gothic, sans-serif;
+  text-decoration: line-through;
+  color: #B3B3B3;
+  margin: 0;
+}
+
+.down-items {
+  display: flex;
+  height: 125px;
+  padding-top: 10px;
+  border: 1px solid #ccc;
+  border-width: 0 1px 4px 0;
+  width: 200px;
+  box-sizing: border-box;
+}
+
+.down-items > div {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.down-items > a > img {
+  width: 100px;
+  height: 100px;
+}
+
+.down-items > div > div:nth-child(1) {
+  height: 54px;
+  font: 12px/18px Microsoft JhengHei, sans-serif;
+  color: #696969;
+  overflow: hidden;
+  margin: 0px;
+}
+
+.down-items > div > div:nth-child(2) {
+  display: block;
+  font: 18px/20px Century Gothic, sans-serif;
+  color: #d62872;
+  margin: 0px;
+}
+
+.down-items > div > div:nth-child(3) {
+  color: #B3B3B3;
+  font: 13px/18px Century Gothic, sans-serif;
+  text-decoration: line-through;
+  margin: 0px;
+}
+
+.content-items > div:nth-child(2) > img {
+  width: 340px;
+  height: 400px;
+  display: block;
+  cursor: pointer;
+}
+
 .life-goods > .title > div:first-child, .furniture > .title > div:first-child {
   background-color: #38CCB2;
 }
