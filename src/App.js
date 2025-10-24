@@ -1,6 +1,7 @@
 import './style.css';
 import React, { useState } from "react";
 import Slide from "./slide";
+import Brand0 from "./brands/brand0";
 
 function App() {
   const [bannerBg, setBannerBg] = useState("#000000");
@@ -261,14 +262,15 @@ function App() {
                 <a href='/'>食品</a>
               </div>
               <div className='content-items'>
-                <div className='brand'>
+                {/* <div className='brand'>
                   <img src="/images/brand_00_0_0.jpg" alt="/"></img>
                   <img src="/images/brand_00_0_1.jpg" alt="/"></img>
                   <img src="/images/brand_00_0_2.jpg" alt="/"></img>
                   <img src="/images/brand_00_0_3.jpg" alt="/"></img>
                   <img src="/images/brand_00_0_4.jpg" alt="/"></img>
                   <img src="/images/brand_00_0_5.jpg" alt="/"></img>
-                </div>
+                </div> */}
+                <Brand0 />
                 <div className='promo-image'>
                   <img src="/images/promo-image_01.jpg" alt="/"></img>
                 </div>
