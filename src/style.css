@@ -121,7 +121,11 @@ div {
 .logo {
   width: 270px;
   font-size: 100px;
-  color: #43ADC7;
+  display: flex;
+}
+
+.logo > img {
+  width: 100%;
 }
 
 .search-bar {
@@ -211,24 +215,126 @@ div {
 .tab-area {
   float: right;
   display: block;
+  height: 40PX;
 }
 
 .menu-tab {
   display: flex;
-  align-items: flex-end;
-  height: 40PX;
+  align-items: center;
+  height: 37PX;
+  justify-content: space-between;
+  width: 1220px;
 }
 
 .menu-tab > li {
-  display: block;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid #ffffff;
+  box-sizing: border-box;
+  height: 37px;
   width: fit-content;
-  background-color: #EAEAEA;
-  font-size: 14px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  margin-left: 2px;
-  padding: 8px 15px;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 0 0.25rem;
   cursor: pointer;
+  font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.menu-tab > li:nth-child(1) {
+  color: #D62872;
+  border-bottom: 3px solid #D62872;
+}
+
+.menu-tab > button {
+  padding: 4px 12px;
+  height: 40px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: none;
+  box-shadow: -4px 0px 6px -2px rgba(0, 0, 0, 0.15);
+}
+
+.menu-tab > button > img {
+  height: 12px;
+  width: 12px;
+  display: flex;
+}
+
+.menu-toggle > img:nth-child(1) {
+  display: block;
+}
+
+.menu-toggle > img:nth-child(1).active {
+  display: none;
+}
+
+.menu-toggle > img:nth-child(2) {
+  display: none;
+}
+
+.menu-toggle > img:nth-child(2).active {
+  display: block;
+}
+
+.drop-menu {
+  display: none;
+}
+
+.drop-menu.active {
+  display: grid;
+  gap: 10px;
+  z-index: 5;
+  width: 1220px;
+  border-radius: 12px;
+  padding: 12px;
+  position: relative;
+  background-color: #FFFFFF;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 8px;
+  grid-template-columns: repeat(9, minmax(0px, 1fr));
+}
+
+/* 使用方式 */
+.drop-menu div:nth-child(n+1):nth-child(-n+9) {
+  background-color: rgba(225, 239, 246, 0.5);
+}
+
+.drop-menu div:nth-child(n+10):nth-child(-n+18) {
+  background-color: rgba(230, 230, 249, 0.5);
+}
+
+.drop-menu div:nth-child(n+19):nth-child(-n+27) {
+  background-color: rgba(242, 215, 222, 0.4);
+}
+
+.drop-menu div:nth-child(n+28):nth-child(-n+36) {
+  background-color: rgba(226, 248, 226, 0.5);
+}
+
+.drop-menu div:nth-child(n+37):nth-child(-n+45) {
+  background-color: rgba(255, 233, 204, 0.5);
+}
+
+.drop-menu > div {
+  width: 100%;
+  display: block;
+  padding: 0.75rem 1rem;
+  border-radius: 22px;
+}
+
+.drop-menu > div > a {
+  display: none;
+}
+
+.drop-menu > div > a {
+  display: block;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.25rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
 .left-menu, .right-menu {
@@ -281,11 +387,6 @@ a {
   height: 160px;
 }
 
-.banner {
-  height: 370px;
-  width: 100%;
-}
-
 .banner > div {
   width: 1220px;
   display: flex;
@@ -299,10 +400,24 @@ a {
   background: #515151;
 }
 
-.banner-middle {
-  width: 818px;
+.main-content {
+  width: 100%;
+  background-color: #f2f2f2;
   display: block;
-  height: 370px;
+}
+
+.banner {
+  width: 1220px;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0px, 1fr));
+}
+
+.slide01 {
+  width: 1220px;
+  display: block;
+  padding-top: 1rem;
+  background-color: #FFE104;
 }
 
 .carousel-wrapper {
@@ -313,8 +428,36 @@ a {
   cursor: pointer;
 }
 
-.carousel-wrapper > .swiper > .swiper-wrapper > .swiper-slide > img {
-  height: 370px;
+.swiper-slide > img {
+  height: 139.75px;
+  width: 139.75px;
+}
+
+.slide01 .swiper .swiper-button-prev, .slide01 .swiper .swiper-button-next {
+  width: 32px;
+  height: 56px;
+  padding: 4px;
+  background-color: rgb(0 0 0/var(--tw-bg-opacity, 0.3));
+}
+
+.slide01 .swiper .swiper-button-prev {
+  right: auto;
+  left: var(--swiper-navigation-sides-offset, 0px);
+  border-end-end-radius: 0.5rem;
+  border-start-end-radius: 0.5rem;
+}
+
+.slide01 .swiper .swiper-button-next {
+  right: var(--swiper-navigation-sides-offset, 0px);
+  left: auto;
+  border-end-start-radius: 0.5rem;
+  border-start-start-radius: 0.5rem;
+}
+
+.swiper .swiper-button-prev svg, .swiper .swiper-button-next svg {
+  width: 9px;
+  height: 16px;
+  color: #FFFFFF;
 }
 
 /* 外層容器，讓圖片置中並可自適應 */
@@ -335,7 +478,8 @@ a {
 }
 
 .custom-swiper {
-  width: 818px;
+  display: flex;
+  height: 155.75px;
 }
 
 /* Swiper 預設點點樣式修改 */
@@ -398,6 +542,11 @@ a {
   height: 130px;
   padding: 10px 0 0 0;
   display: flex;
+  position: relative;
+}
+
+.content-1 div {
+  position: relative;
 }
 
 .content-1 > div > img:first-child {

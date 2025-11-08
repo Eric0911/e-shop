@@ -120,7 +120,11 @@ div{
 .logo {
     width: 270px;
     font-size: 100px;
-    color: #43ADC7;
+    display: flex;
+} 
+
+.logo > img {
+    width: 100%;
 } 
 
 .search-bar {
@@ -210,24 +214,124 @@ div{
 .tab-area {
     float: right;
     display: block;
+    height: 40PX;
 }
 
 .menu-tab {
     display: flex;
-    align-items: flex-end;
-    height: 40PX;
+    align-items: center;
+    height: 37PX;
+    justify-content: space-between;
+    width: 1220px;
 }
 
 .menu-tab > li {
-    display: block;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #ffffff;
+    box-sizing: border-box;
+    height: 37px;
     width: fit-content;
-    background-color: #EAEAEA;
-    font-size: 14px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    margin-left: 2px;
-    padding: 8px 15px;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 0 0.25rem;
     cursor: pointer;
+    font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.menu-tab > li:nth-child(1) {
+    color: #D62872;
+    border-bottom: 3px solid #D62872;
+}
+
+.menu-tab > button {
+    padding: 4px 12px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: -4px 0px 6px -2px rgba(0, 0, 0, 0.15);
+}
+
+.menu-tab > button > img {
+    height: 12px;
+    width: 12px;
+    display: flex;
+}
+
+.menu-toggle > img:nth-child(1) {
+    display: block;
+}
+
+.menu-toggle > img:nth-child(1).active {
+    display: none;
+}
+
+.menu-toggle > img:nth-child(2) {
+    display: none;
+}
+
+.menu-toggle > img:nth-child(2).active {
+    display: block;
+}
+
+.drop-menu {
+    display: none;
+}
+
+.drop-menu.active {
+    display: grid;
+    gap: 10px;
+    z-index: 5;
+    width: 1220px;
+    border-radius: 12px;
+    padding: 12px;
+    position: relative;
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 8px;
+    grid-template-columns:repeat(9, minmax(0px, 1fr));
+}
+
+// colors: 顏色陣列，interval: 每組數量（此例為 9）
+@mixin color-by-range($colors, $interval: 9) {
+    $count: length($colors);
+  
+    @for $i from 1 through $count {
+      $start: ($i - 1) * $interval + 1;
+      $end: $i * $interval;
+  
+      // 使用範圍選擇器（第 $start 到 $end 個）
+      .drop-menu div:nth-child(n + #{$start}):nth-child(-n + #{$end}) {
+        background-color: nth($colors, $i);
+      }
+    }
+  }
+  
+  /* 使用方式 */
+  $colors: rgba(225, 239, 246, 0.5), rgba(230, 230, 249, 0.5), rgba(242, 215, 222, 0.4), rgba(226, 248, 226, 0.5), rgba(255, 233, 204, 0.5);
+  @include color-by-range($colors, 9);
+
+.drop-menu > div {
+    width: 100%;
+    display: block;
+    padding: 0.75rem 1rem;
+    border-radius: 22px;
+}
+
+.drop-menu > div > a {
+    display: none;
+}
+
+.drop-menu > div > a {
+    display: block;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.25rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
 .left-menu, .right-menu {
@@ -252,7 +356,6 @@ div{
     left: 0px;
 }
 
-
 .left-menu > li:first-child {
     padding: 0px 10px 0px 25px;
 }
@@ -270,7 +373,7 @@ div{
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: #000000;
     font-size: 13px;
@@ -280,11 +383,6 @@ a{
 .header{
     width: 1220px;
     height: 160px;
-}
-
-.banner{
-    height: 370px;
-    width: 100%;
 }
 
 .banner > div {
@@ -300,10 +398,24 @@ a{
     background: #515151;
 }
 
-.banner-middle {
-    width: 818px;
+.main-content {
+    width: 100%;
+    background-color: #f2f2f2;
     display: block;
-    height: 370px;
+}
+
+.banner{
+    width: 1220px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0px, 1fr));
+}
+
+.slide01 {
+    width: 1220px;
+    display: block;
+    padding-top: 1rem;
+    background-color: #FFE104;
 }
 
 .carousel-wrapper {
@@ -314,9 +426,38 @@ a{
     cursor: pointer;
 }
 
-.carousel-wrapper > .swiper > .swiper-wrapper > .swiper-slide > img {
-    height: 370px;
+.swiper-slide > img {
+    height: 139.75px;
+    width: 139.75px;
 }
+
+.slide01 .swiper .swiper-button-prev, .slide01 .swiper .swiper-button-next {
+    width: 32px;
+    height: 56px;
+    padding: 4px;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity, 0.3));
+}
+
+.slide01 .swiper .swiper-button-prev {
+    right: auto;
+    left: var(--swiper-navigation-sides-offset, 0px);
+    border-end-end-radius: .5rem;
+    border-start-end-radius: .5rem;
+}
+
+.slide01 .swiper .swiper-button-next {
+    right: var(--swiper-navigation-sides-offset, 0px);
+    left: auto;
+    border-end-start-radius: .5rem;
+    border-start-start-radius: .5rem;
+}
+
+.swiper .swiper-button-prev svg, .swiper .swiper-button-next svg {
+    width: 9px;
+    height: 16px;
+    color: #FFFFFF;
+}
+
 
 /* 外層容器，讓圖片置中並可自適應 */
 .carousel-wrapper {
@@ -336,7 +477,8 @@ a{
 }
   
 .custom-swiper {
-    width: 818px;
+    display: flex;
+    height: 155.75px;
 }
 
 /* Swiper 預設點點樣式修改 */
@@ -400,6 +542,11 @@ a{
     height: 130px;
     padding: 10px 0 0 0;
     display: flex;
+    position: relative;
+}
+
+.content-1 div {
+    position: relative;
 }
 
 .content-1 > div > img:first-child {

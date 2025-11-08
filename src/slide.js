@@ -1,53 +1,40 @@
-import React, { useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 import "./style.css"; // 確保這行有引入 CSS
 
-const Slide = ({onBgChange}) => {
-  // 用 useState 來記錄目前背景顏色
-  const [bgColor, setBgColor] = useState("#000000");
+const Slide = ({ onBgChange }) => {
 
-  // 每張幻燈片對應的背景顏色，可自行修改
-  const bgColors = [
-    "#F1E9DA",
-    "#023090",
-    "#FAD24F",
-    "#6B7B92",
-    "#7646FE",
-    "#F6DCC1",
-    "#8A1213",
-  ];
-
-  
   return (
-
-    <div className="carousel-wrapper" style={{ backgroundColor: bgColor }}>
+    <div className="slide01">
       <Swiper
-        modules={[Autoplay, Pagination]}
-        slidesPerView={1}
+        modules={[Autoplay, Pagination, Navigation]} // ✅ 加入 Navigation 模組
+        slidesPerView={8}
         loop={true}
-        autoplay={{ delay: 5000 }}
-        pagination={{ clickable: true, }}
-        className="custom-swiper"
-        onSlideChange={(swiper) => {
-          const index = swiper.realIndex; // 真實索引（排除 loop）
-          const newColor = bgColors[index % bgColors.length];
-          setBgColor(newColor);
-          if (onBgChange) onBgChange(newColor); // ✅ 回傳給父層
-        }}
-      >
-        <SwiperSlide><img src="/images/banner_0.jpg" alt="/" /></SwiperSlide>
-        <SwiperSlide><img src="/images/banner_1.jpg" alt="/" /></SwiperSlide>
-        <SwiperSlide><img src="/images/banner_2.jpg" alt="/" /></SwiperSlide>
-        <SwiperSlide><img src="/images/banner_3.jpg" alt="/" /></SwiperSlide>
-        <SwiperSlide><img src="/images/banner_4.jpg" alt="/" /></SwiperSlide>
-        <SwiperSlide><img src="/images/banner_5.jpg" alt="/" /></SwiperSlide>
-        <SwiperSlide><img src="/images/banner_6.jpg" alt="/" /></SwiperSlide>
+        pagination={{ clickable: true }}
+        navigation={true} // ✅ 開啟左右箭頭
+        className="custom-swiper">
+
+        <SwiperSlide><img src="/images/slide01_0.png" alt="banner0" /></SwiperSlide>
+        <SwiperSlide><img src="/images/slide01_1.png" alt="banner1" /></SwiperSlide>
+        <SwiperSlide><img src="/images/slide01_2.png" alt="banner2" /></SwiperSlide>
+        <SwiperSlide><img src="/images/slide01_3.png" alt="banner3" /></SwiperSlide>
+        <SwiperSlide><img src="/images/slide01_4.png" alt="banner4" /></SwiperSlide>
+        <SwiperSlide><img src="/images/slide01_5.png" alt="banner5" /></SwiperSlide>
+        <SwiperSlide><img src="/images/slide01_6.png" alt="banner6" /></SwiperSlide>
+        <SwiperSlide><img src="/images/slide01_7.png" alt="banner0" /></SwiperSlide>
+        <SwiperSlide><img src="/images/slide01_8.png" alt="banner1" /></SwiperSlide>
+        <SwiperSlide><img src="/images/slide01_9.png" alt="banner2" /></SwiperSlide>
+        <SwiperSlide><img src="/images/slide01_A.png" alt="banner3" /></SwiperSlide>
+        <SwiperSlide><img src="/images/slide01_B.png" alt="banner4" /></SwiperSlide>
+        <SwiperSlide><img src="/images/slide01_C.png" alt="banner5" /></SwiperSlide>
+        <SwiperSlide><img src="/images/slide01_D.png" alt="banner6" /></SwiperSlide>
       </Swiper>
     </div>
   );
 };
-  
+
 export default Slide;

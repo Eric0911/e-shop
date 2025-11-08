@@ -1,10 +1,10 @@
 import './style.css';
-import React, { useState } from "react";
-import Slide from "./slide";
+import React from "react";
 import Brand0 from "./brands/brand0";
+import DropDown from './DropDown';
+import Slide from "./slide";
 
 function App() {
-  const [bannerBg, setBannerBg] = useState("#000000");
   
   return (
     <div className="App">
@@ -32,7 +32,7 @@ function App() {
         <div className='header'>
           <div className='search-area'>
             <div className='logo'>
-              LOGO
+              <img src="/images/logo.png" alt="/"></img>
             </div>
             <div>
               <div className='search-bar'>
@@ -66,69 +66,163 @@ function App() {
               </li>
             </div>
           </div>
+          <DropDown />
           <div className='tab-area'>
             <div className='menu-tab'>
-              <li>Plus訂閱</li>
-              <li>站長推薦</li>
-              <li>重磅新品</li>
-              <li>樂公益</li>
-              <li>保險館</li>
+              <li>首頁</li>
+              <li>限時搶購</li>
+              <li>直播</li>
+              <li>OO店+</li>
               <li>看看買</li>
-              <li>週期訂購</li>
-              <li>品牌旗艦</li>
-              <li>綠色生活</li>
-              <li>賺代幣</li>
+              <li>家電</li>
+              <li>電玩</li>
+              <li>手機/相機</li>
+              <li>電腦/組件</li>
+              <li>3C周邊</li>
+              <li>保健/醫療</li>
+              <li>食品/飲料</li>
+              <li>生鮮</li>
+              <li>女時尚</li>
+              <li>男時尚</li>
+              <button className='menu-toggle'>
+                <img src="/images/down-arrow.png" alt="/"></img>
+                <img src="/images/up-arrow.png" alt="/"></img>
+              </button>
             </div>  
-          </div> 
+          </div>
+          <div className='drop-menu'>
+            <div>
+              <a href='/'>首頁</a>
+            </div>
+            <div>
+              <a href='/'>限時搶購</a>
+            </div>
+            <div>
+              <a href='/'>直播</a>
+            </div>
+            <div>
+              <a href='/'>wo店+</a>
+            </div>
+            <div>
+              <a href='/'>看看買</a>
+            </div>
+            <div>
+              <a href='/'>家電</a>
+            </div>
+            <div>
+              <a href='/'>電玩</a>
+            </div>
+            <div>
+              <a href='/'>手機/相機</a>
+            </div>
+            <div>
+              <a href='/'>電腦/組件</a>
+            </div>
+            <div>
+              <a href='/'>3C週邊</a>
+            </div>
+            <div>
+              <a href='/'>保健/醫療</a>
+            </div>
+            <div>
+              <a href='/'>食品/飲料</a>
+            </div>
+            <div>
+              <a href='/'>生鮮</a>
+            </div>
+            <div>
+              <a href='/'>女時尚</a>
+            </div>
+            <div>
+              <a href='/'>男時尚</a>
+            </div>
+            <div>
+              <a href='/'>精品/飾品</a>
+            </div>
+            <div>
+              <a href='/'>彩妝保養</a>
+            </div>
+            <div>
+              <a href='/'>個人清潔</a>
+            </div>
+            <div>
+              <a href='/'>日用/紙品</a>
+            </div>
+            <div>
+              <a href='/'>母嬰/玩具</a>
+            </div>
+            <div>
+              <a href='/'>餐廚</a>
+            </div>
+            <div>
+              <a href='/'>家具收納</a>
+            </div>
+            <div>
+              <a href='/'>修繕園藝</a>
+            </div>
+            <div>
+              <a href='/'>傢飾寢具</a>
+            </div>
+            <div>
+              <a href='/'>寵物</a>
+            </div>
+            <div>
+              <a href='/'>運動/按摩</a>
+            </div>
+            <div>
+              <a href='/'>戶外</a>
+            </div>
+            <div>
+              <a href='/'>車類</a>
+            </div>
+            <div>
+              <a href='/'>圖書影音</a>
+            </div>
+            <div>
+              <a href='/'>文具樂器</a>
+            </div>
+            <div>
+              <a href='/'>藝術宗教</a>
+            </div>
+            <div>
+              <a href='/'>旅遊/住宿</a>
+            </div>
+            <div>
+              <a href='/'>票券</a>
+            </div>
+            <div>
+              <a href='/'>加值/軟體</a>
+            </div>
+            <div>
+              <a href='/'>綠色生活</a>
+            </div>
+            <div>
+              <a href='/'>跨境好物</a>
+            </div>
+            <div>
+              <a href='/'>wowo富立綜合保代</a>
+            </div>
+            <div>
+              <a href='/'>樂公益</a>
+            </div>
+            <div>
+              <a href='/'>品牌旗艦館</a>
+            </div>            
+          </div>
         </div>
       </header>
-      <div className='banner' style={{ backgroundColor: bannerBg, transition: "background-color 0.8s ease" }}>
-        <div>
-          <div className='banner-left'>
-            <div className='menu-title'>
-              <img src="/images/menu-title.png" alt="/"></img>
-            </div> 
-            <div className='menu-list'>
-              <li>家電・電玩・視聽・廚三機</li>
-              <li>手機・平板・耳機・攝相機</li>
-              <li>電腦・電競・週邊・零組件</li>
-              <li className='group-divider'></li>
-              <li>保健・醫療用品・保險套</li>
-              <li>食品・零食・飲料・生鮮</li>
-              <li className='group-divider'></li>
-              <li>彩妝・保養・洗沐・香氛</li>
-              <li>女時尚・男時尚・運動</li>
-              <li>珠寶・精品・配飾</li>
-              <li className='group-divider'></li>
-              <li>日用品・清潔・餐廚・寵物</li>
-              <li>母嬰・童裝・尿布・玩具</li>
-              <li className='group-divider'></li>
-              <li>家具・寢具・傢飾・修繕</li>
-              <li>運動・按摩・戶外・車類</li>
-              <li className='group-divider'></li>
-              <li>圖書・文具・影音・樂器</li>
-              <li>旅遊・票券・加值・軟體</li>
-            </div> 
-          </div>
-          <div className='banner-middle'>
-            <Slide onBgChange={setBannerBg}/>
-          </div> 
-          <div className='banner-right'>
-            <div className='banner-right-title'>
-            </div>
-            <div className='banner-right-promo'>
-              <img src="/images/banner-promo_1.png" alt="/"></img>
-            </div>
-            <div className='banner-right-promo'>
-              <img src="/images/banner-promo_2.png" alt="/"></img>
-            </div>
-            <div className='banner-right-promo'>
-              <img src="/images/banner-promo_3.png" alt="/"></img>
-            </div>
-            <div className='banner-right-bottom'>
-            </div>
-          </div>
+      <div className='main-content'>
+        <div className='banner'>
+          <img src="/images/banner00.jpg" alt="/"></img>
+          <img src="/images/banner01.jpg" alt="/"></img>
+          <img src="/images/banner02.jpg" alt="/"></img>
+          <img src="/images/banner03.jpg" alt="/"></img>
+          <img src="/images/banner10.jpg" alt="/"></img>
+          <img src="/images/banner11.jpg" alt="/"></img>
+          <img src="/images/banner12.jpg" alt="/"></img>
+          <img src="/images/banner13.jpg" alt="/"></img>
         </div>
+        <Slide />
       </div>
       <div className='content-1'>
         <div>
@@ -249,27 +343,7 @@ function App() {
               <div></div>
             </div>
             <div className='content'>
-              <div className='content-list'>
-                <a href='/'>熱銷榜</a>
-                <a href='/'>3C資訊</a>
-                <a href='/'>生活用品</a>
-                <a href='/'>家庭婦幼</a>
-                <a href='/'>精品鞋包</a>
-                <a href='/'>流行</a>
-                <a href='/'>家電</a>
-                <a href='/'>美妝</a>
-                <a href='/'>保健</a>
-                <a href='/'>食品</a>
-              </div>
               <div className='content-items'>
-                {/* <div className='brand'>
-                  <img src="/images/brand_00_0_0.jpg" alt="/"></img>
-                  <img src="/images/brand_00_0_1.jpg" alt="/"></img>
-                  <img src="/images/brand_00_0_2.jpg" alt="/"></img>
-                  <img src="/images/brand_00_0_3.jpg" alt="/"></img>
-                  <img src="/images/brand_00_0_4.jpg" alt="/"></img>
-                  <img src="/images/brand_00_0_5.jpg" alt="/"></img>
-                </div> */}
                 <Brand0 />
                 <div className='promo-image'>
                   <img src="/images/promo-image_01.jpg" alt="/"></img>
