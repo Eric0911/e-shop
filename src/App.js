@@ -2,7 +2,8 @@ import './style.css';
 import React from "react";
 import Brand0 from "./brands/brand0";
 import DropDown from './DropDown';
-import Slide from "./slide";
+import Slide01 from "./slide01";
+import Slide02 from "./slide02";
 
 function App() {
   
@@ -222,42 +223,99 @@ function App() {
           <img src="/images/banner12.jpg" alt="/"></img>
           <img src="/images/banner13.jpg" alt="/"></img>
         </div>
-        <Slide />
-      </div>
-      <div className='content-1'>
-        <div>
-          <img src="/images/content-note.png" alt="/"></img>
-        </div>
-        <div>
-          <div className='new-customer'>
+        <Slide01 />
+        <div className='content0'>
+          <div>
+            <img src="/images/content0_00.png" alt="bannerD" />
+            <img src="/images/content0_01.png" alt="bannerD" />
+            <img src="/images/content0_02.png" alt="bannerD" />
+            <img src="/images/content0_03.png" alt="bannerD" />
+            <img src="/images/content0_04.png" alt="bannerD" />
           </div>
           <div>
-            <div className='new-customer-video'>
+            <div className='content0-search'>wowo熱搜榜</div>
+            <div className='list-items'>
+              <div>
+                <div>
+                  <div className='item-logo'>1</div>
+                  <a href="/">麥當勞</a>
+                </div>
+                <div>熱度3731萬</div>
+              </div>
+              <div>
+                <div>
+                  <div className='item-logo'>2</div>
+                  <a href="/">即期品買一送一</a>
+                </div>
+                <div>熱度3435萬</div>
+              </div>
+              <div>
+                <div>
+                  <div className='item-logo'>3</div>
+                  <a href="/">new balance</a>
+                </div>
+                <div>熱度3010萬</div>
+              </div>
+              <div>
+                <div>
+                  <div className='item-logo'>4</div>
+                  <a href="/">iphone 17 pro max</a>
+                </div>
+                <div>熱度2796萬
+                </div>
+              </div>
+              <div>
+                <div>
+                  <div className='item-logo'>5</div>
+                  <a href="/">衛生紙</a>
+                </div>
+                <div>熱度2773萬</div>
+              </div>
+              <div>
+                <div>
+                  <div className='item-logo'>6</div>
+                  <a href="/">洗衣球</a>
+                </div>
+                <div>熱度2772萬</div>
+              </div>
+              <div>
+                <div>
+                  <div className='item-logo'>7</div>
+                  <a href="/">除濕機</a>
+                </div>
+                <div>熱度2734萬</div>
+              </div>
+              <div>
+                <div>
+                  <div className='item-logo'>8</div>
+                  <a href="/">滿意寶寶</a>
+                </div>
+                <div>熱度2681萬</div>
+              </div>
+              <div>
+                <div>
+                  <div className='item-logo'>9</div>
+                  <a href="/">行李箱</a>
+                </div>
+                <div>熱度2666萬</div>
+              </div>
             </div>
-            <div className='new-customer-text cursor-color'>
-              <a href='/'>
-                <span>新客好康</span>
-                <span>註冊抽mo幣!</span>
-              </a>
-            </div>
-          </div>
+          </div>      
         </div>
-        <div>
-          <div className='TV-shop'>
-          </div>
+        <div className='content1'>
           <div>
-            <div className='TV-shop-video'>
-            </div>
-            <div className='TV-shop-text cursor-color'>
-              <a href='/'>
-                <span className='TV-shop-text-1'>01台LIVE</span>
-                <span className='TV-shop-text-2'>細胞能量 高效養護修復神褲2入</span>
-                <span className='TV-shop-text-3'>$3,860</span>
-              </a>
+            <Slide02 />
+            <div className='brand-union'>
+              <img src="/images/brand-union0.png" alt="/"></img>
+              <img src="/images/brand-union1.png" alt="/"></img>
+              <img src="/images/brand-union2.png" alt="/"></img>
+              <img src="/images/brand-union3.png" alt="/"></img>
             </div>
           </div>
+          <div></div>
         </div>
       </div>
+      
       <div className='content-2'>
         <div className='content-2-row1'>
           <div className='flash-sale'>

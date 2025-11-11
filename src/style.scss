@@ -429,23 +429,24 @@ a {
 .swiper-slide > img {
     height: 139.75px;
     width: 139.75px;
+    cursor: pointer;
 }
 
-.slide01 .swiper .swiper-button-prev, .slide01 .swiper .swiper-button-next {
+.slide01 .swiper .swiper-button-prev, .slide01 .swiper .swiper-button-next, .slide02 .swiper .swiper-button-prev, .slide02 .swiper .swiper-button-next {
     width: 32px;
     height: 56px;
     padding: 4px;
     background-color: rgb(0 0 0 / var(--tw-bg-opacity, 0.3));
 }
 
-.slide01 .swiper .swiper-button-prev {
+.slide01 .swiper .swiper-button-prev, .slide02 .swiper .swiper-button-prev {
     right: auto;
     left: var(--swiper-navigation-sides-offset, 0px);
     border-end-end-radius: .5rem;
     border-start-end-radius: .5rem;
 }
 
-.slide01 .swiper .swiper-button-next {
+.slide01 .swiper .swiper-button-next, .slide02 .swiper .swiper-button-next {
     right: var(--swiper-navigation-sides-offset, 0px);
     left: auto;
     border-end-start-radius: .5rem;
@@ -458,6 +459,16 @@ a {
     color: #FFFFFF;
 }
 
+.swiper .swiper-pagination .swiper-pagination-bullet {
+    height: 4px;
+}
+
+.slide01 .swiper .swiper-pagination {
+    position: relative;
+    margin: 0.75rem 0px;
+    bottom: 0;
+    --swiper-navigation-size: 56px;
+}
 
 /* 外層容器，讓圖片置中並可自適應 */
 .carousel-wrapper {
@@ -478,16 +489,15 @@ a {
   
 .custom-swiper {
     display: flex;
-    height: 155.75px;
 }
 
 /* Swiper 預設點點樣式修改 */
 .custom-swiper .swiper-pagination-bullet {
     background: rgba(255, 255, 255, 0.7);
     opacity: 1;
-    width: 6px;
-    height: 6px;
-    border-radius: 3px;
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
     transition: all 0.3s ease;
     margin: 0 4px !important;
 }
@@ -495,17 +505,174 @@ a {
 /* 當前頁的點點變寬 */
 .custom-swiper .swiper-pagination-bullet-active {
     background: white;
-    width: 24px; /* 變寬的效果 */
-    height: 6px;
-    border-radius: 3px;
+    width: 12px; /* 變寬的效果 */
+    height: 4px;
+    border-radius: 2px;
+    background-color: rgb(214 40 114 / var(--tw-bg-opacity, 1));
 }
 
-/* 讓 pagination 置中 */
-.swiper-pagination {
-    bottom: 10px !important;
-    text-align: center;
+.content0 {
+    width: 1220px;
+    display: flex;
+    background-color: #FFE104;
+    align-items: center;
 }
 
+.content0 > div:nth-child(1) {
+    padding: 1rem 10px;
+    width: 610px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.content0 > div:nth-child(1) > img {
+    width: 98px;
+    height: 98px;
+}
+
+.content0 > div:nth-child(2) {
+    box-sizing: border-box;
+    border-left: 1px solid rgb(209, 213, 219, 1);
+    width: 610px;
+}
+
+.content0-search {
+    font-size: 23px;
+    line-height: 28px;
+    font-weight: 700;
+    color: rgb(34, 34, 34);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.list-items {
+    padding: 14px 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 10px;
+    row-gap: 4px;
+}
+
+.list-items div {
+    margin: 0px;
+}
+
+.list-items > div {
+    padding: 6px 10px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.list-items > div > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item-logo {
+    background-color: rgb(179, 179, 179);
+    color: #FFFFFF;
+    min-width: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 0px 4px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.list-items div:nth-child(1) > div > div {
+    background-color: rgb(255, 67, 67);
+}
+
+.list-items div:nth-child(2) > div > div {
+    background-color: rgb(255, 106, 0);
+}
+
+.list-items div:nth-child(3) > div > div  {
+    background-color: rgb(255, 200, 0);
+}
+
+.list-items > div > div > a {
+    line-height: 18px;
+    font-size: 13px;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.list-items > div > div:nth-child(2) {
+    color: rgb(156, 163, 175);
+    font-size: 13px;
+    line-height: 18px;
+    flex-shrink: 0;
+    font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.content1 {
+    width: 1220px;
+    display: block;
+    background-color: #FFFFFF;
+    align-items: center;
+}
+
+.content1 > div:nth-child(1) {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    height: 472.8px;
+}
+
+.slide02 {
+    width: 72.355%;
+    display: block;
+}
+
+.slide02 > div {
+    display: flex;
+    gap: 0.625rem;
+}
+
+.slide02 > div > div > div > img {
+    width: 323.98px;
+    height: 440.8px;
+}
+
+.brand-union {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.brand-union > img {
+    width: 162px;
+    height: 220.39px;
+}
+
+.slide02 .swiper .swiper-pagination {
+    height: 4px;
+    margin: 0.75rem 0px;
+    padding-bottom: 0.75rem;
+}
+
+.slide02 .swiper .swiper-pagination .swiper-pagination-bullet {
+    margin: 0 2px !important;
+}
 
 .banner-right{
     width: 202px;
