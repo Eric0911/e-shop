@@ -632,6 +632,7 @@ a {
   display: block;
   background-color: #FFFFFF;
   align-items: center;
+  margin-bottom: 4px;
 }
 
 .content1 > div:nth-child(1) {
@@ -674,6 +675,94 @@ a {
 
 .slide02 .swiper .swiper-pagination .swiper-pagination-bullet {
   margin: 0 2px !important;
+}
+
+.content1 > div > img {
+  width: 100%;
+  height: auto;
+}
+
+.content1 > div:nth-child(2) {
+  background-color: #FFFFFF;
+}
+
+.content2 {
+  background-color: #f2f2f2;
+  width: 1220px;
+  padding-bottom: 1rem;
+}
+
+.content2 > div {
+  background-color: #FFFFFF;
+}
+
+.slide03 {
+  padding: 1rem 0px 0px 1rem;
+}
+
+.slide03 .swiper-slide {
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  gap: 0.625rem;
+  width: calc(0.116279 * (100% + 16px - 5rem));
+}
+
+.swiper-slide > a > img {
+  height: 128px;
+  width: 128px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.slide03 div, .slide03 span {
+  font: 15px/19px "Microsoft JhengHei UI", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", Helvetica, Arial, sans-serif, "BlinkMacSystemFont", "Segoe UI", Roboto, "Helvetica Neue", system-ui, -apple-system;
+}
+
+.swiper-slide > a > div > div:nth-child(1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  display: -webkit-box; /* 使用彈性盒子建立多行容器 */
+  -webkit-box-orient: vertical;
+  min-height: 32px;
+  color: rgb(64, 64, 64);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.swiper-slide > a > div span:nth-child(1) {
+  color: rgb(214, 40, 114);
+  line-height: 1.25;
+  font-size: 13px;
+  font-weight: 500;
+}
+.swiper-slide > a > div span:nth-child(2) {
+  color: rgb(214, 40, 114);
+  line-height: 1.25;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.swiper-slide > a > div {
+  padding: 0px 10px 10px 10px;
+  background-image: url("slide03_BG.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover; /* 保持比例，完整顯示圖片 */
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.swiper-slide > a > div > div > div:nth-child(2) {
+  margin-top: 0.25rem;
+  color: rgb(153, 153, 153);
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration-line: line-through;
+  min-height: 18px;
 }
 
 .banner-right {

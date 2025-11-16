@@ -3,5 +3,5 @@
 
 發佈程式到GitHub
 1.git add .
-2.git commit -m "網頁改版"
+2.git commit -m "增加第一個投影片"
 3.git push
