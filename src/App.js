@@ -4,6 +4,7 @@ import DropDown from './DropDown';
 import Slide01 from "./slide01";
 import Slide02 from "./slide02";
 import Slide03 from "./slide03";
+import Slide04 from "./slide04";
 
 function App() {
   
@@ -322,6 +323,11 @@ function App() {
           </div>
           <div>
             <Slide03 />
+          </div>
+        </div>
+        <div className='content3'>
+          <div>
+            <Slide04 />
           </div>
         </div>
       </div>
