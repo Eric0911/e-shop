@@ -3,5 +3,5 @@
 
 發佈程式到GitHub
 1.git add .
-2.git commit -m "增加第4個Slide，但還沒修改好"
+2.git commit -m "完成第4個Slide"
 3.git push
