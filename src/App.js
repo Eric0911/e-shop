@@ -5,6 +5,7 @@ import Slide01 from "./slide01";
 import Slide02 from "./slide02";
 import Slide03 from "./slide03";
 import Slide04 from "./slide04";
+import Slide05 from "./slide05";
 
 function App() {
   
@@ -328,6 +329,14 @@ function App() {
         <div className='content3'>
           <div>
             <Slide04 />
+          </div>
+        </div>
+        <div className='content4'>
+          <div>
+            <img src="/images/free-shipping.png" alt="/"></img>
+          </div>
+          <div>
+            <Slide05 />
           </div>
         </div>
       </div>
