@@ -40,5 +40,34 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
-  <script></script>
+    <script>
+        // 設定倒數目標時間（例：2025/12/31 23:59:59）
+        const targetTime = new Date("2025-12-31T23:59:59").getTime();
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = targetTime - now;
+
+    if (distance <= 0) {
+      document.getElementById("countdown").innerText = "倒數結束！";
+      clearInterval(timer);
+      return;
+    }
+
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").innerText =
+      `${hours.toString().padStart(2, '0')}:` +
+      `${minutes.toString().padStart(2, '0')}:` +
+      `${seconds.toString().padStart(2, '0')}`;
+  }
+
+  // 每秒更新
+  const timer = setInterval(updateCountdown, 1000);
+
+  // 先執行一次避免等待 1 秒
+  updateCountdown();
+  </script>
 </html>

@@ -6,6 +6,8 @@ import Slide02 from "./slide02";
 import Slide03 from "./slide03";
 import Slide04 from "./slide04";
 import Slide05 from "./slide05";
+import Slide06 from "./slide06";
+import Slide07 from "./slide07";
 
 function App() {
   
@@ -337,6 +339,21 @@ function App() {
           </div>
           <div>
             <Slide05 />
+          </div>
+        </div>
+        <div className='content5'>
+          <div>
+            <Slide06 />
+          </div>
+          <div>
+            倒數
+            <div id="countdown">Loading…</div>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div>
+            <Slide07 />
           </div>
         </div>
       </div>

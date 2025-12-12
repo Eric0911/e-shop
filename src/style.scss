@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Microsoft JhengHei UI", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", Helvetica, Arial, sans-serif, "BlinkMacSystemFont", "Segoe UI", Roboto, "Helvetica Neue", system-ui, -apple-system;
 }
 
 li {
@@ -436,7 +437,9 @@ a {
 .slide02 .swiper .swiper-button-prev, .slide02 .swiper .swiper-button-next,
 .slide03 .swiper .swiper-button-prev, .slide03 .swiper .swiper-button-next,
 .slide04 .swiper .swiper-button-prev, .slide04 .swiper .swiper-button-next,
-.slide05 .swiper .swiper-button-prev, .slide05 .swiper .swiper-button-next {
+.slide05 .swiper .swiper-button-prev, .slide05 .swiper .swiper-button-next,
+.slide06 .swiper .swiper-button-prev, .slide06 .swiper .swiper-button-next,
+.slide07 .swiper .swiper-button-prev, .slide07 .swiper .swiper-button-next {
     width: 32px;
     height: 56px;
     padding: 4px;
@@ -445,7 +448,8 @@ a {
 
 .slide01 .swiper .swiper-button-prev, .slide02 .swiper .swiper-button-prev,
 .slide03 .swiper .swiper-button-prev, .slide04 .swiper .swiper-button-prev,
-.slide05 .swiper .swiper-button-prev {
+.slide05 .swiper .swiper-button-prev, .slide06 .swiper .swiper-button-prev,
+.slide07 .swiper .swiper-button-prev {
     right: auto;
     left: var(--swiper-navigation-sides-offset, 0px);
     border-end-end-radius: .5rem;
@@ -454,7 +458,8 @@ a {
 
 .slide01 .swiper .swiper-button-next, .slide02 .swiper .swiper-button-next,
 .slide03 .swiper .swiper-button-next, .slide04 .swiper .swiper-button-next,
-.slide05 .swiper .swiper-button-next  {
+.slide05 .swiper .swiper-button-next, .slide06 .swiper .swiper-button-next,
+.slide07 .swiper .swiper-button-next {
     right: var(--swiper-navigation-sides-offset, 0px);
     left: auto;
     border-end-start-radius: .5rem;
@@ -692,13 +697,13 @@ a {
     background-color: #FFFFFF;
 }
 
-.content2, .content3, .content4 {
+.content2, .content3, .content4, .content5 {
     background-color: #f2f2f2;
     width: 1220px;
     padding-bottom: 1rem;
 }
 
-.content2 > div, .content3 > div, .content4 > div {
+.content2 > div, .content3 > div, .content4 > div, .content5 > div {
     background-color: #FFFFFF;
 }
 
@@ -718,10 +723,6 @@ a {
     border: 1px solid #e5e7eb;
     display: flex;
     width: 130px !important;
-}
-
-.swiper-wrapper {
-    gap: 0.625rem;
 }
 
 .swiper-slide > a > img {
@@ -793,14 +794,18 @@ a {
 
 .slide03 > .swiper > .swiper-pagination,
 .slide04 > .swiper > .swiper-pagination,
-.slide05 > .swiper > .swiper-pagination {
+.slide05 > .swiper > .swiper-pagination,
+.slide06 > .swiper > .swiper-pagination,
+.slide07 > .swiper > .swiper-pagination {
     position: relative;
     bottom: 12px;
     height: 28px;
     padding: 0.75rem 0px;
 }
 
-.slide03 .custom-swiper, .slide04 .custom-swiper, .slide05 .custom-swiper {
+.slide03 .custom-swiper, .slide04 .custom-swiper,
+.slide05 .custom-swiper, .slide06 .custom-swiper, 
+.slide07 .custom-swiper {
     .swiper-pagination-bullet {
         background-color: rgb(237 237 237);
         margin-right: 0px !important;
@@ -830,7 +835,7 @@ a {
     display: flex;
     padding: 1rem;
     background-image: url("slide03_BG.png");
-    background-size: auto 50%;
+    background-size: 100% 50%;
     background-position: bottom;
     background-repeat: no-repeat;
 }
@@ -907,6 +912,187 @@ a {
         font: 700 13px / 18px "Microsoft JhengHei UI", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", Helvetica, Arial, sans-serif, "BlinkMacSystemFont", "Segoe UI", Roboto, "Helvetica Neue", system-ui, -apple-system;
     }
 }
+
+.slide06 {
+    padding-top: 1rem;
+
+    .swiper-wrapper {
+        padding-left: 1rem;
+        gap: 0px;
+
+        .swiper-slide > a > img {
+            object-position: center center;
+            object-fit: cover;
+            width: 250px;
+            height: 125px;
+            border-top-right-radius: 0px;
+            border-top-left-radius: 0px;
+            margin-bottom: 0px;
+        } 
+    }
+
+    > .swiper > .swiper-pagination {
+        position: absolute;
+    }
+}
+
+.content5 > div:nth-child(2) {
+    background-image: url("flash-sale.png");
+    width: 100%;
+    height: 70px;
+    padding-left: 1000px;
+    color: rgb(64, 64, 64);
+    display: flex;
+    align-items: center;
+    font: 400 19px "Microsoft JhengHei UI", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", Helvetica, Arial, sans-serif, "BlinkMacSystemFont", "Segoe UI", Roboto, "Helvetica Neue", system-ui, -apple-system;
+}
+
+.content5 .slide07 .swiper {
+    width: 100%;
+}
+
+.slide07 .swiper-slide {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(5, 234px);
+    justify-content: center;
+    padding: 10px 0;
+
+    > a {
+        position: inherit;
+        border-radius: 8px;
+        box-sizing: border-box;
+        border: 1px solid #e5e7eb;
+        display: flex;
+    
+        > div {
+            padding: 10px;
+
+            > div:nth-child(1) {
+                width: 212px;
+                height: 212px;
+                position: relative;
+                border-radius: 4px;
+
+                > img {
+                    position: absolute;
+                    display: flex;
+                }
+
+                > img:nth-child(1) {
+                    z-index: 15;
+                    top: 0;
+                    left: 0;
+                    height: auto;
+                    width: 28%;
+                }
+
+                > img:nth-child(2) {
+                    width: inherit;
+                    height: inherit;
+                }
+
+                > img:nth-child(3) {
+                    width: inherit;
+                    z-index: 10;
+                    bottom: 0;
+                }
+            }
+
+            > div:nth-child(2) {
+                > span {
+                    display: block;
+                }
+
+                > span:nth-child(1) {
+                    font-weight: 700;
+                    font-size: 15px;
+                    margin-bottom: .125rem;
+                    line-height: 2;
+                    color: rgb(221 34 34);
+                    -webkit-box-orient: vertical;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    line-clamp: 1;
+                    overflow: hidden;
+                    min-height: 30px;
+                }
+
+                > span:nth-child(2) {
+                    overflow: hidden;
+                    line-height: 1.43;
+                    -webkit-box-orient: vertical;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    line-clamp: 2;
+                    word-break: break-all;
+                    white-space: normal;
+                    text-overflow: ellipsis;
+                    font-size: 15px;
+                    color: #404040;
+                }
+
+                > div {
+                    > span {
+                        font-size: 11px;
+                        color: #DD2222;
+                        line-height: 1.25;
+                    }
+                    
+                    > span:nth-child(2) {
+                        margin-right: 0.25rem;
+                    }
+
+                    > span:nth-child(3) {
+                        font-size: 25px;
+                    }
+                }
+
+                > span:nth-child(4) {
+                    text-decoration-line: line-through;
+                    font-size: 13px;
+                    color: rgb(153 153 153);
+                    font-weight: 400;
+                    margin-bottom: 0.25rem;
+                    line-height: initial;
+                }
+
+                > span:nth-child(5) {
+                    color: rgb(64 64 64);
+                    font-weight: 700;
+                    padding: 0.125rem 0.5rem;
+                    line-height: 1.45;
+                    background-color: rgb(253 242 242);
+                    border-radius: 10px;
+                    width: max-content;
+                    margin-bottom: .5rem;
+                }
+            }
+        }
+    }
+}
+
+.snap-up {
+    color: rgb(255 255 255);
+    background-color: red;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    min-width: 1.5rem;
+    border-top-left-radius: 13px;
+    border-bottom-right-radius: .5rem;
+    display: flex;
+    padding: 5px 30px;
+
+    > svg {
+        width: 22px;
+        height: 19.15px;
+
+        > path {
+            fill: rgb(255 255 255);
+        }
+    }
+} 
 
 .banner-right{
     width: 202px;
