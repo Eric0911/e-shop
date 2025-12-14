@@ -10,6 +10,8 @@ import Slide06 from "./slide06";
 import Slide07 from "./slide07";
 import Slide08 from "./slide08";
 import Slide09 from "./slide09";
+import Slide10 from "./slide10";
+import Slide11 from "./slide11";
 
 function App() {
   
@@ -368,6 +370,14 @@ function App() {
           <img src="/images/VIP-price.png" alt="/"></img>
           <div>
             <Slide09 />
+          </div>
+          <div>
+            <Slide10 />
+          </div>
+        </div>
+        <div className='content8'>
+          <div>
+            <Slide11 />
           </div>
         </div>
       </div>

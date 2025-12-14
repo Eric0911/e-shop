@@ -12,7 +12,6 @@ const Slide07 = ({ onBgChange }) => {
     <div className="slide07">
       <Swiper
         modules={[Autoplay, Pagination, Navigation]} // ✅ 加入 Navigation 模組
-        // slidesPerView={5}
         loop={false}
         pagination={{ clickable: true }}
         navigation={true} // ✅ 開啟左右箭頭
