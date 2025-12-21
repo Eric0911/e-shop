@@ -1225,7 +1225,7 @@ a {
         display: block;
     }
 
-    > div {
+    > div, > div > div {
         background-color: #FFFFFF;
         display: grid;
         grid-template-columns: repeat(5, 224.8px);
@@ -1363,6 +1363,30 @@ a {
                 line-height: 1.5;
                 font-size: 11px;
                 min-height: 1lh;
+            }
+        }
+    }
+
+    > .more {
+        display: flex;
+        padding: 20px 0px;
+        box-sizing: border-box;
+
+        > button {
+            background-color: rgb(255 255 255);
+            border: 1px solid rgb(237 237 237);
+            color: rgb(64 64 64);
+            cursor: pointer;
+            padding: 8px 60px;
+            border-radius: 20px; 
+            font: 400 15px / 20px "Microsoft JhengHei UI";
+            display: flex;
+            align-items: center;
+            
+            > img {
+                width: 12px;
+                height: 12px;
+                padding: 4px;
             }
         }
     }
@@ -2128,54 +2152,11 @@ a {
     margin: 0px;
 }
 
-.facebook-area {
-    width: 1220px;
-    display: flex;
-    height: 80px;
-    background-color: #31384A;
-    padding: 5px 0px 0px 5px;
-}
-
-.facebook-area > button {
-    border-radius: 3px;
-    font-size: 12px;
-    height: 20px;
-    padding: 0px 6px;
-    background-color: #1877F2;
-    border: 0px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-
-.facebook-area > button > img, .facebook-area > button > a {
-    height: 16px;
-    width: 16px;
-    display: block;
-}
-
-.facebook-area > button > a {
-    line-height: 16px;
-    padding: 0px 4px;
-    color: #FFFFFF;
-    font-weight: 700;
-}
-
-.facebook-area > a {
-    font-size: 12px;
-    display: flex;
-    line-height: 1.28;
-    padding: 0px 0px 0px 5px;
-    height: 20px;
-    align-items: center;
-}
-
 .footer-1 {
     margin: 0px;
     display: flex;
     width: 100%;
-    background-color: #31384A;
+    background-color: rgb(9, 53, 93);
     align-items: flex-end;
     justify-content: space-between;
 }
@@ -2192,15 +2173,14 @@ a {
 }
 
 .anti-fraud {
-    width: 874px;
-    height: 38px;
+    width: 1220px;
     padding: 10px;
     border: 2.5px solid #95C8CD;
     color: #95C8CD;
     font: bold 15px / 19px "Microsoft JhengHei UI","SF Pro TC","SF Pro Text","SF Pro Icons","PingFang TC",Helvetica,Arial,sans-serif,"BlinkMacSystemFont","Segoe UI",Roboto,"Helvetica Neue",system-ui,-apple-system;
     border-radius: 10px;
-    margin: 0px 0px 30px 26px;
-    box-sizing: content-box;
+    margin: 0px 0px 30px 0px;
+    box-sizing: border-box;
 }
 
 .detail-list {
@@ -2209,9 +2189,7 @@ a {
 
 .detail-list > div {
     display: block;
-    width: 130px;
     text-align: left;
-    margin: 0px 0px 0px 26px;
 }
 
 .detail-list > div > a {
@@ -2277,7 +2255,7 @@ a {
 }
 
 @media screen and (min-width: 1220px) {
-    .facebook-area, .friend-link {
+    .friend-link {
         width: 100%;
     }
 }
