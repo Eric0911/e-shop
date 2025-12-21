@@ -705,7 +705,7 @@ a {
     background-color: #FFFFFF;
 }
 
-.content2, .content3, .content4, .content5, .content8 {
+.content2, .content3, .content4, .content5, .content8, .content9 {
     background-color: #f2f2f2;
     width: 1220px;
     padding-bottom: 1rem;
@@ -1219,6 +1219,188 @@ a {
         }
     }
 }
+
+.content9 {
+    > img {
+        display: block;
+    }
+
+    > div {
+        background-color: #FFFFFF;
+        display: grid;
+        grid-template-columns: repeat(5, 224.8px);
+        gap: 16px;
+        justify-content: center;
+
+        > a {
+            margin-bottom: 12px;
+
+            > div:nth-child(1) {
+                width: 224.8px;
+                height: 224.8px;
+                position: relative;
+    
+                img {
+                    position: absolute;
+                    display: flex;
+                }
+    
+                img:nth-child(1) {
+                    z-index: 15;
+                    top: 0;
+                    left: 0;
+                    height: auto;
+                    width: 28%;
+                }
+    
+                img:nth-child(2) {
+                    height: 224.8px;
+                    width: 224.8px;
+                }
+    
+                img:nth-child(3) {
+                    width: inherit;
+                    z-index: 10;
+                    bottom: 0;
+                    height: auto;
+                }
+            }
+        }
+
+        .product-des {
+            padding: 14px 10px 0px 10px;
+
+            > div:nth-child(1) {
+                color: rgb(221 34 34);
+                font: 13px / 18px "Microsoft JhengHei UI", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", Helvetica, Arial, sans-serif, "BlinkMacSystemFont", "Segoe UI", Roboto, "Helvetica Neue", system-ui, -apple-system;
+                margin-bottom: 2px;
+            }
+
+            > div:nth-child(2) {
+                color: rgb(64 64 64);
+                font: 400 15px / 20px "Microsoft JhengHei UI", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", Helvetica, Arial, sans-serif, "BlinkMacSystemFont", "Segoe UI", Roboto, "Helvetica Neue", system-ui, -apple-system;
+                margin-bottom: 8px;
+                overflow: hidden;
+                -webkit-box-orient: vertical;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                line-clamp: 2;
+                word-break: break-all;
+                text-overflow: ellipsis;
+                min-height: 40px;
+            }
+
+            > div:nth-child(3) {
+                line-height: 26px;
+
+                span {
+                    color: rgb(219 39 119);
+                }
+
+                > span:nth-child(1) {
+                    font: 13px / 24px "Microsoft JhengHei UI", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", Helvetica, Arial, sans-serif, "BlinkMacSystemFont", "Segoe UI", Roboto, "Helvetica Neue", system-ui, -apple-system;
+                }
+
+                > span:nth-child(2) {
+                    font: 700 19px / 24px "Microsoft JhengHei UI", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", Helvetica, Arial, sans-serif, "BlinkMacSystemFont", "Segoe UI", Roboto, "Helvetica Neue", system-ui, -apple-system;
+                }
+
+                > span:nth-child(3) {
+                    text-decoration-line: line-through;
+                    margin-left: 8px;
+                    color: rgb(179 179 179);
+                    font: 13px / 18px "Microsoft JhengHei UI", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", Helvetica, Arial, sans-serif, "BlinkMacSystemFont", "Segoe UI", Roboto, "Helvetica Neue", system-ui, -apple-system;
+                }
+            }
+
+            .star {
+                font-size: 11px;
+                line-height: 1.5;
+                min-height: 16.5px;
+                display: flex;
+
+                > div {
+                    height: 15px;
+                    width: 15px;
+                    margin: 0px;
+
+                    > svg {
+                        fill: rgb(245, 158, 11);
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+
+                > div:last-child {
+                    color: rgb(179 179 179);
+                    font: 13px / 18px "Microsoft JhengHei UI", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", Helvetica, Arial, sans-serif, "BlinkMacSystemFont", "Segoe UI", Roboto, "Helvetica Neue", system-ui, -apple-system;
+                    margin-left: 8px;
+                }
+            }
+
+            .key-word {
+                display: flex;
+                margin: 4px 0px;
+                min-height: max(17px);
+
+                > div {
+                    font-size: 11px;
+                    line-height: 15px;
+                    padding: 1px 2px;
+                    margin: 0px 4px 0px 0px;
+                    color: #FFFFFF;
+                    border-radius: 2px;
+                    background-color: rgb(190, 2, 17);;
+                }
+
+                .coupon, .register, .giveaway {
+                    background-color: rgb(255, 76, 118);
+                }
+            }
+
+            .quentity {
+                color: rgb(69, 69, 69);
+                line-height: 1.5;
+                font-size: 11px;
+                min-height: 1lh;
+            }
+        }
+    }
+}
+
+.slideA, .slideB, .slideC, .slideD, .slideE,
+.slideF, .slideG, .slideH, .slideI, .slideJ,
+.slideK, .slideL, .slideM, .slideN, .slideO,
+.slideP, .slideQ, .slideR, .slideS, .slideT,
+.slideU, .slideV, .slideW, .slideX, .slideY {
+    > .swiper {
+        > .swiper-wrapper {
+            height: 224.8px;
+        }
+        > .swiper-pagination {
+            position: relative;
+            padding-top: 14px;
+            display: flex;
+            justify-content: center;
+    
+            .swiper-pagination-bullet {
+                height: 6px;
+                width: 6px;
+                border-radius: 3px;
+                background-color: rgb(217, 217, 217);
+                margin: 0 4px !important;
+            }
+    
+            .swiper-pagination-bullet-active {
+                width: 6px;
+                height: 6px;
+                border-radius: 3px;
+                background-color: rgb(214 40 114);
+            }
+        }
+    }
+}
+
 
 .snap-up {
     color: rgb(255 255 255);

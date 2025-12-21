@@ -707,7 +707,7 @@ a {
   background-color: #FFFFFF;
 }
 
-.content2, .content3, .content4, .content5, .content8 {
+.content2, .content3, .content4, .content5, .content8, .content9 {
   background-color: #f2f2f2;
   width: 1220px;
   padding-bottom: 1rem;
@@ -1161,6 +1161,168 @@ a {
   font-size: 15px;
   background-color: #B5B5B5;
   border-radius: 22px;
+}
+
+.content9 > img {
+  display: block;
+}
+.content9 > div {
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template-columns: repeat(5, 224.8px);
+  gap: 16px;
+  justify-content: center;
+}
+.content9 > div > a {
+  margin-bottom: 12px;
+}
+.content9 > div > a > div:nth-child(1) {
+  width: 224.8px;
+  height: 224.8px;
+  position: relative;
+}
+.content9 > div > a > div:nth-child(1) img {
+  position: absolute;
+  display: flex;
+}
+.content9 > div > a > div:nth-child(1) img:nth-child(1) {
+  z-index: 15;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 28%;
+}
+.content9 > div > a > div:nth-child(1) img:nth-child(2) {
+  height: 224.8px;
+  width: 224.8px;
+}
+.content9 > div > a > div:nth-child(1) img:nth-child(3) {
+  width: inherit;
+  z-index: 10;
+  bottom: 0;
+  height: auto;
+}
+.content9 > div .product-des {
+  padding: 14px 10px 0px 10px;
+}
+.content9 > div .product-des > div:nth-child(1) {
+  color: rgb(221, 34, 34);
+  font: 13px/18px "Microsoft JhengHei UI", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", Helvetica, Arial, sans-serif, "BlinkMacSystemFont", "Segoe UI", Roboto, "Helvetica Neue", system-ui, -apple-system;
+  margin-bottom: 2px;
+}
+.content9 > div .product-des > div:nth-child(2) {
+  color: rgb(64, 64, 64);
+  font: 400 15px/20px "Microsoft JhengHei UI", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", Helvetica, Arial, sans-serif, "BlinkMacSystemFont", "Segoe UI", Roboto, "Helvetica Neue", system-ui, -apple-system;
+  margin-bottom: 8px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  min-height: 40px;
+}
+.content9 > div .product-des > div:nth-child(3) {
+  line-height: 26px;
+}
+.content9 > div .product-des > div:nth-child(3) span {
+  color: rgb(219, 39, 119);
+}
+.content9 > div .product-des > div:nth-child(3) > span:nth-child(1) {
+  font: 13px/24px "Microsoft JhengHei UI", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", Helvetica, Arial, sans-serif, "BlinkMacSystemFont", "Segoe UI", Roboto, "Helvetica Neue", system-ui, -apple-system;
+}
+.content9 > div .product-des > div:nth-child(3) > span:nth-child(2) {
+  font: 700 19px/24px "Microsoft JhengHei UI", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", Helvetica, Arial, sans-serif, "BlinkMacSystemFont", "Segoe UI", Roboto, "Helvetica Neue", system-ui, -apple-system;
+}
+.content9 > div .product-des > div:nth-child(3) > span:nth-child(3) {
+  text-decoration-line: line-through;
+  margin-left: 8px;
+  color: rgb(179, 179, 179);
+  font: 13px/18px "Microsoft JhengHei UI", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", Helvetica, Arial, sans-serif, "BlinkMacSystemFont", "Segoe UI", Roboto, "Helvetica Neue", system-ui, -apple-system;
+}
+.content9 > div .product-des .star {
+  font-size: 11px;
+  line-height: 1.5;
+  min-height: 16.5px;
+  display: flex;
+}
+.content9 > div .product-des .star > div {
+  height: 15px;
+  width: 15px;
+  margin: 0px;
+}
+.content9 > div .product-des .star > div > svg {
+  fill: rgb(245, 158, 11);
+  height: 100%;
+  width: 100%;
+}
+.content9 > div .product-des .star > div:last-child {
+  color: rgb(179, 179, 179);
+  font: 13px/18px "Microsoft JhengHei UI", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", Helvetica, Arial, sans-serif, "BlinkMacSystemFont", "Segoe UI", Roboto, "Helvetica Neue", system-ui, -apple-system;
+  margin-left: 8px;
+}
+.content9 > div .product-des .key-word {
+  display: flex;
+  margin: 4px 0px;
+  min-height: 17px;
+}
+.content9 > div .product-des .key-word > div {
+  font-size: 11px;
+  line-height: 15px;
+  padding: 1px 2px;
+  margin: 0px 4px 0px 0px;
+  color: #FFFFFF;
+  border-radius: 2px;
+  background-color: rgb(190, 2, 17);
+}
+.content9 > div .product-des .key-word .coupon, .content9 > div .product-des .key-word .register, .content9 > div .product-des .key-word .giveaway {
+  background-color: rgb(255, 76, 118);
+}
+.content9 > div .product-des .quentity {
+  color: rgb(69, 69, 69);
+  line-height: 1.5;
+  font-size: 11px;
+  min-height: 1lh;
+}
+
+.slideA > .swiper > .swiper-wrapper, .slideB > .swiper > .swiper-wrapper, .slideC > .swiper > .swiper-wrapper, .slideD > .swiper > .swiper-wrapper, .slideE > .swiper > .swiper-wrapper,
+.slideF > .swiper > .swiper-wrapper, .slideG > .swiper > .swiper-wrapper, .slideH > .swiper > .swiper-wrapper, .slideI > .swiper > .swiper-wrapper, .slideJ > .swiper > .swiper-wrapper,
+.slideK > .swiper > .swiper-wrapper, .slideL > .swiper > .swiper-wrapper, .slideM > .swiper > .swiper-wrapper, .slideN > .swiper > .swiper-wrapper, .slideO > .swiper > .swiper-wrapper,
+.slideP > .swiper > .swiper-wrapper, .slideQ > .swiper > .swiper-wrapper, .slideR > .swiper > .swiper-wrapper, .slideS > .swiper > .swiper-wrapper, .slideT > .swiper > .swiper-wrapper,
+.slideU > .swiper > .swiper-wrapper, .slideV > .swiper > .swiper-wrapper, .slideW > .swiper > .swiper-wrapper, .slideX > .swiper > .swiper-wrapper, .slideY > .swiper > .swiper-wrapper {
+  height: 224.8px;
+}
+.slideA > .swiper > .swiper-pagination, .slideB > .swiper > .swiper-pagination, .slideC > .swiper > .swiper-pagination, .slideD > .swiper > .swiper-pagination, .slideE > .swiper > .swiper-pagination,
+.slideF > .swiper > .swiper-pagination, .slideG > .swiper > .swiper-pagination, .slideH > .swiper > .swiper-pagination, .slideI > .swiper > .swiper-pagination, .slideJ > .swiper > .swiper-pagination,
+.slideK > .swiper > .swiper-pagination, .slideL > .swiper > .swiper-pagination, .slideM > .swiper > .swiper-pagination, .slideN > .swiper > .swiper-pagination, .slideO > .swiper > .swiper-pagination,
+.slideP > .swiper > .swiper-pagination, .slideQ > .swiper > .swiper-pagination, .slideR > .swiper > .swiper-pagination, .slideS > .swiper > .swiper-pagination, .slideT > .swiper > .swiper-pagination,
+.slideU > .swiper > .swiper-pagination, .slideV > .swiper > .swiper-pagination, .slideW > .swiper > .swiper-pagination, .slideX > .swiper > .swiper-pagination, .slideY > .swiper > .swiper-pagination {
+  position: relative;
+  padding-top: 14px;
+  display: flex;
+  justify-content: center;
+}
+.slideA > .swiper > .swiper-pagination .swiper-pagination-bullet, .slideB > .swiper > .swiper-pagination .swiper-pagination-bullet, .slideC > .swiper > .swiper-pagination .swiper-pagination-bullet, .slideD > .swiper > .swiper-pagination .swiper-pagination-bullet, .slideE > .swiper > .swiper-pagination .swiper-pagination-bullet,
+.slideF > .swiper > .swiper-pagination .swiper-pagination-bullet, .slideG > .swiper > .swiper-pagination .swiper-pagination-bullet, .slideH > .swiper > .swiper-pagination .swiper-pagination-bullet, .slideI > .swiper > .swiper-pagination .swiper-pagination-bullet, .slideJ > .swiper > .swiper-pagination .swiper-pagination-bullet,
+.slideK > .swiper > .swiper-pagination .swiper-pagination-bullet, .slideL > .swiper > .swiper-pagination .swiper-pagination-bullet, .slideM > .swiper > .swiper-pagination .swiper-pagination-bullet, .slideN > .swiper > .swiper-pagination .swiper-pagination-bullet, .slideO > .swiper > .swiper-pagination .swiper-pagination-bullet,
+.slideP > .swiper > .swiper-pagination .swiper-pagination-bullet, .slideQ > .swiper > .swiper-pagination .swiper-pagination-bullet, .slideR > .swiper > .swiper-pagination .swiper-pagination-bullet, .slideS > .swiper > .swiper-pagination .swiper-pagination-bullet, .slideT > .swiper > .swiper-pagination .swiper-pagination-bullet,
+.slideU > .swiper > .swiper-pagination .swiper-pagination-bullet, .slideV > .swiper > .swiper-pagination .swiper-pagination-bullet, .slideW > .swiper > .swiper-pagination .swiper-pagination-bullet, .slideX > .swiper > .swiper-pagination .swiper-pagination-bullet, .slideY > .swiper > .swiper-pagination .swiper-pagination-bullet {
+  height: 6px;
+  width: 6px;
+  border-radius: 3px;
+  background-color: rgb(217, 217, 217);
+  margin: 0 4px !important;
+}
+.slideA > .swiper > .swiper-pagination .swiper-pagination-bullet-active, .slideB > .swiper > .swiper-pagination .swiper-pagination-bullet-active, .slideC > .swiper > .swiper-pagination .swiper-pagination-bullet-active, .slideD > .swiper > .swiper-pagination .swiper-pagination-bullet-active, .slideE > .swiper > .swiper-pagination .swiper-pagination-bullet-active,
+.slideF > .swiper > .swiper-pagination .swiper-pagination-bullet-active, .slideG > .swiper > .swiper-pagination .swiper-pagination-bullet-active, .slideH > .swiper > .swiper-pagination .swiper-pagination-bullet-active, .slideI > .swiper > .swiper-pagination .swiper-pagination-bullet-active, .slideJ > .swiper > .swiper-pagination .swiper-pagination-bullet-active,
+.slideK > .swiper > .swiper-pagination .swiper-pagination-bullet-active, .slideL > .swiper > .swiper-pagination .swiper-pagination-bullet-active, .slideM > .swiper > .swiper-pagination .swiper-pagination-bullet-active, .slideN > .swiper > .swiper-pagination .swiper-pagination-bullet-active, .slideO > .swiper > .swiper-pagination .swiper-pagination-bullet-active,
+.slideP > .swiper > .swiper-pagination .swiper-pagination-bullet-active, .slideQ > .swiper > .swiper-pagination .swiper-pagination-bullet-active, .slideR > .swiper > .swiper-pagination .swiper-pagination-bullet-active, .slideS > .swiper > .swiper-pagination .swiper-pagination-bullet-active, .slideT > .swiper > .swiper-pagination .swiper-pagination-bullet-active,
+.slideU > .swiper > .swiper-pagination .swiper-pagination-bullet-active, .slideV > .swiper > .swiper-pagination .swiper-pagination-bullet-active, .slideW > .swiper > .swiper-pagination .swiper-pagination-bullet-active, .slideX > .swiper > .swiper-pagination .swiper-pagination-bullet-active, .slideY > .swiper > .swiper-pagination .swiper-pagination-bullet-active {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: rgb(214, 40, 114);
 }
 
 .snap-up {
