@@ -1,9 +1,12 @@
 import '../style.css';
 import React, { useState } from 'react';
 import Header from './Header';
+import Searcher from './Searcher';
 import Login from './Login';
 import Privacy from './Privacy';
 import Terms from './Terms';
+import Footer1 from './Footer1';
+import Footer2 from './Footer2';
 import { Routes, Route } from 'react-router-dom';
 import Slide01 from "../slide01";
 import Slide02 from "../slide02";
@@ -44,7 +47,7 @@ import SlideY from "../slideY";
 // 1. 引入你在 src/firebase.js 匯出的 db
 import '../firebase'; 
 
-function App() {
+function Home() {
 
   // 1. 初始化狀態為 false (不顯示內容，顯示按鈕)
   const [isRevealed, setIsRevealed] = useState(false);
@@ -52,9 +55,8 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <Searcher />
       <Routes>
-        {/* 先預留Home的位置，到時候再新增 */}
-        {/* <Route path="/" element={<Home />} /> */}
         <Route path="/Login" element={<Login />} />
 
         <Route path="/privacy" element={<Privacy />} />
@@ -1337,80 +1339,10 @@ function App() {
           )}
         </div>
       </div>
-      <div className='footer-1'>
-        <div>
-          <div>
-            <div className='anti-fraud'>防詐騙提醒：yoyo絕不會以電話或簡訊通知訂單/分期出錯、或變更付款方式，更不會要您前往ATM進行任何操作！不應在yoyo以外的任何地方輸入yoyo帳密(例如非政府官方的電子發票app)，以免權益受損！</div>
-            <div className='detail-list'>
-              <div className='about-us cursor-color'>
-                <div>關於我們</div>
-                <a href='/'>yoyo官網</a>
-                <a href='/'>招商專區</a>
-                <a href='/'>人才招募</a>
-              </div>
-              <div className='feature-service cursor-color'>
-                <div>特色服務</div>
-                <a href='/'>大宗採購方案</a>
-                <a href='/'>異業合作</a>
-                <a href='/'>yoyo幣企業採購</a>
-              </div>
-              <div className='member-rights cursor-color'>
-                <div>會員權益</div>
-                <a href='/'>客戶隱私權政策</a>
-                <a href='/'>客戶權利義務</a>
-                <a href='/'>網路安全標章</a>
-                <a href='/'>包裝減量標章</a>
-                <a href='/'>防詐騙宣導</a>
-                <a href='/'>碳足跡標籤</a>
-              </div>
-              <div className='series-webs cursor-color'>
-                <div>系列網站</div>
-                <a href='/'>momoFB粉絲團</a>
-                <a href='/'>momo好物交流社團</a>
-                <a href='/'>momo官方IG</a>
-                <a href='/'>momo富立保險</a>
-              </div>
-              <div className='customer-service cursor-color'>
-                <div>客戶服務</div>
-                <a href='/'>訂單/配送進度查詢</a>
-                <a href='/'>取消訂單/退貨</a>
-                <a href='/'>更改配送地址</a>
-                <a href='/'>追蹤清單</a>
-                <a href='/'>快速到貨服務</a>
-                <a href='/'>折價券說明</a>
-                <a href='/'>FAQ 常見問題</a>
-                <a href='/'>聯絡我們</a>
-              </div>
-              <div className='app cursor-color'>
-                <div>行動購物APP</div>
-                <div>
-                  <img src="/images/App-QRcode.jpg" alt="/"></img>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className='footer-2  cursor-color'>
-          <a href='/'>關於我們</a>
-          <a href='/'>人才招募</a>
-          <a href='/'>招商專區</a>
-          <a href='/'>電腦版</a>
-          <a href='/'>手機版</a>
-          <a href='/'>Facebook</a>
-          <a href='/'>加入line</a>
-          <a href='/'>Instagram</a>
-      </div>
-      <div className='footer-3'>
-        <span>富邦媒體科技股份有限公司 統編：27365925 台北市 114 內湖區洲子街 96 號 4 樓 富邦momo通過ISO/IEC27001認證，食品業者登錄字號：A-127365925-00000-7</span>
-        <span>版權所有 copyright © 2006 momo.com Inc. All Rights Reserved.</span>
-        <span>網站中旅遊行程商品由富昇旅行社股份有限公司提供 註冊編號：交觀綜2152號 旅遊專線電話：0800-777-616 地址：台北市內湖區洲子街92號7樓</span>
-      </div>
-      <div className='digital-CS'>
-        <img src="/images/digital-CS.png" alt="/"></img>
-      </div>
+      <Footer1 />
+      <Footer2 />
     </div>
   );
 }
 
-export default App;
+export default Home;

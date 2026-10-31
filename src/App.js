@@ -1,6 +1,5 @@
 import './style.css';
-import React, { useState } from 'react';
-import Header from './pages/Header';
+import React from 'react';
 import Login from './pages/Login';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
@@ -12,7 +11,6 @@ import './firebase';
 function App() {
   return (
     <div className="App">
-      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Login" element={<Login />} />
